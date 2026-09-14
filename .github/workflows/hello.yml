@@ -12,3 +12,6 @@ jobs:
       - name: Show what is in the project
         run: ls -R
 
+      - name: Deliberately fail
+        run: exit 1
+
