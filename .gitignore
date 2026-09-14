@@ -1,0 +1,12 @@
+# Virtual environment. Rebuildable, never committed.
+.venv/
+
+# Python leftovers
+__pycache__/
+*.pyc
+
+# Secrets. Never commit these.
+.env
+
+# Mac
+.DS_Store
