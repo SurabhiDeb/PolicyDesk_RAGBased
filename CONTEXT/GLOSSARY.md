@@ -37,3 +37,7 @@ than exact.
 
 **RAG (retrieval augmented generation).** The bot looks things up in your
 documents before answering, instead of guessing from memory.
+
+Workflow in CI. A file that tells the robot what to do. It lives in a folder called .github/workflows.
+
+Runner. The temporary cloud computer that does the work.
