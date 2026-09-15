@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"frontline\", \"urgency\": \"P4\", \"escalate\": false, \"reason\": \"Positive feedback with no action required.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 853,
+  "output_tokens": 44,
+  "model_seconds": 5.0
+}

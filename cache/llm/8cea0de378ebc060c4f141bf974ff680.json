@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"complaints\", \"urgency\": \"P2\", \"escalate\": true, \"reason\": \"Customer has repeatedly complained unresolved and threatens Financial Ombudsman referral, indicating a formal complaint requiring prompt escalation.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 877,
+  "output_tokens": 150,
+  "model_seconds": 6.58
+}

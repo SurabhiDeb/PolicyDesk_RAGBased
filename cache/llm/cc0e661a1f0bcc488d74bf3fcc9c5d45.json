@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"engineering\", \"urgency\": \"P3\", \"escalate\": false, \"reason\": \"Reproducible app crash on a specific feature, needing engineering investigation but not an immediate risk.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 858,
+  "output_tokens": 113,
+  "model_seconds": 6.58
+}

@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"fraud_scams\", \"urgency\": \"P1\", \"escalate\": true, \"reason\": \"Customer reports multiple unrecognized payments actively taken from their account, indicating potential ongoing fraud.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 875,
+  "output_tokens": 72,
+  "model_seconds": 4.6
+}

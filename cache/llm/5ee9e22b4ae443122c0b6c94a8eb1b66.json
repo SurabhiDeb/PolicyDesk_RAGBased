@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"frontline\", \"urgency\": \"P3\", \"escalate\": false, \"reason\": \"Recurring app login frustration is a single-user issue with no immediate financial or safety risk.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 867,
+  "output_tokens": 62,
+  "model_seconds": 4.19
+}

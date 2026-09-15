@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"frontline\", \"urgency\": \"P2\", \"escalate\": false, \"reason\": \"Customer's card is not working while abroad, leaving them potentially stranded without payment access.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 852,
+  "output_tokens": 311,
+  "model_seconds": 9.57
+}

@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"data_protection\", \"urgency\": \"P3\", \"escalate\": false, \"reason\": \"Statutory subject access request under UK GDPR with no immediate risk requiring urgent action.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 859,
+  "output_tokens": 64,
+  "model_seconds": 3.94
+}

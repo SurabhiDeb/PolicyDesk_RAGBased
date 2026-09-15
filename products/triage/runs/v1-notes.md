@@ -98,3 +98,7 @@ F1 explains case 13. My original theory was wrong.
 
 Nothing in v2 needs to address output format. v1 is already reliable there,
 and spending prompt on a solved problem is how prompts get bloated.
+
+#14 regressed. Was P1, now P2. My P2 examples listed bereavement, and the model anchored distress to that tier. It still escalates, so a human sees it immediately, but the queue tier is wrong on your most important case. Known issue for v3.
+
+#13 changed answer between two identical v2 runs. Same prompt sha, same model, temperature 0. First run P3, this run P2. Output length went from 58 tokens to 311.

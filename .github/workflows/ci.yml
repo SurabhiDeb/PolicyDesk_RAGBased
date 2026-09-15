@@ -1,0 +1,19 @@
+name: CI
+
+on: push
+
+jobs:
+  eval-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Check the seed dataset is valid
+        run: python3 products/triage/check_data.py
+
+      - name: Enforce the eval gate
+        run: python3 products/triage/gate.py

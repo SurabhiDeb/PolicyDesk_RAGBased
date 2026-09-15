@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"payments_ops\", \"urgency\": \"P2\", \"escalate\": false, \"reason\": \"Payment stuck pending since Friday with merchant not receiving funds, impacting customer's money today.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 858,
+  "output_tokens": 67,
+  "model_seconds": 4.18
+}
