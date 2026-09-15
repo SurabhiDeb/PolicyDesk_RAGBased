@@ -81,6 +81,8 @@ caused it. There is no evidence for that; the reason field never mentions
 language. Ablation to run: submit the same message in English, change
 nothing else. Same answer means F1 explains it. Different answer means
 language affects routing, which would be a serious new finding.
+RESOLVED. Both Hindi and English return P3. Language is not the cause.
+F1 explains case 13. My original theory was wrong.
 
 ## What v2 must fix, in priority order
 

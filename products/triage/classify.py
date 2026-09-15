@@ -74,7 +74,10 @@ def _estimate_usd(results, billed_only):
         if billed_only and r["cached"]:
             continue
         model = r["model"] or ""
-        match = next((k for k in PRICES if model.startswith(k)), None)
+        bare = model.split("/")[-1]
+        match = next((k for k in PRICES if bare.startswith(k)), None)
+        if match is None and model:
+            print(f"  WARNING: no price known for {model!r}, cost is understated")
         if match is None:
             continue
         price_in, price_out = PRICES[match]
@@ -196,4 +199,5 @@ def main():
         )
 
 
-main()
+if __name__ == "__main__":
+    main()
