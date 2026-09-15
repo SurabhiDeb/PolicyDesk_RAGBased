@@ -113,3 +113,8 @@ Prompt v2 fixed urgency rules only, one variable. Urgency 75% to 85%.
 Found and fixed a truncation bug that silently turned the most important
 case into a missed escalation. Added gate.py and wired it into CI, then
 proved it blocks by deliberately breaking a run file.
+
+
+Open question: Haiku 4.5 is 3x faster (1.3s vs 4.2s) and half the price
+than Sonnet 5, and scored at least as well on prompt v2 in a promptfoo
+matrix. Not switched. Needs an escalation-recall check first.

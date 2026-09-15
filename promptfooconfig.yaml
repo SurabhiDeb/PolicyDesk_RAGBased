@@ -1,0 +1,42 @@
+description: Nimbus Triage, prompt and model matrix
+
+providers:
+  - id: openai:chat:anthropic/claude-sonnet-5
+    label: sonnet-5
+    config:
+      apiBaseUrl: https://api.aicredits.in/v1
+      apiKeyEnvar: AICREDITS_API_KEY
+      temperature: 0
+      max_tokens: 500
+
+  - id: openai:chat:anthropic/claude-haiku-4.5
+    label: haiku-4.5
+    config:
+      apiBaseUrl: https://api.aicredits.in/v1
+      apiKeyEnvar: AICREDITS_API_KEY
+      temperature: 0
+      max_tokens: 500
+
+prompts:
+  - id: file://promptfoo/prompt.js:v1
+    label: v1
+  - id: file://promptfoo/prompt.js:v2
+    label: v2
+
+tests: file://products/triage/data/seed.csv
+
+defaultTest:
+  options:
+    transform: output.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/, '').trim()
+  assert:
+    - type: is-json
+      metric: contract
+    - type: javascript
+      value: JSON.parse(output).team === context.vars.team
+      metric: team
+    - type: javascript
+      value: JSON.parse(output).urgency === context.vars.urgency
+      metric: urgency
+    - type: javascript
+      value: String(JSON.parse(output).escalate).toLowerCase() === String(context.vars.escalate).toLowerCase()
+      metric: escalate
