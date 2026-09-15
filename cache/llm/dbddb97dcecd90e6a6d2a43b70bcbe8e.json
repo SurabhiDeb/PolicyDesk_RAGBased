@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"frontline\", \"urgency\": \"P4\", \"escalate\": false, \"reason\": \"General investment opinion question, not financial advice we can give, low urgency.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 476,
+  "output_tokens": 55,
+  "model_seconds": 3.45
+}

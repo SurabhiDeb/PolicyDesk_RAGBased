@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"frontline\", \"urgency\": \"P3\", \"escalate\": false, \"reason\": \"Single-user login issue with no indication of fraud or urgency.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 441,
+  "output_tokens": 53,
+  "model_seconds": 3.83
+}

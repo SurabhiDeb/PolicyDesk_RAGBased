@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"fraud_scams\", \"urgency\": \"P1\", \"escalate\": true, \"reason\": \"Customer likely fell for a phishing scam and disclosed card details, requiring immediate action to secure the account.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 490,
+  "output_tokens": 71,
+  "model_seconds": 3.53
+}

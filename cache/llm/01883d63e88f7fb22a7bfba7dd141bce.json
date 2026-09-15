@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"complaints\", \"urgency\": \"P1\", \"escalate\": true, \"reason\": \"Customer has repeatedly complained about unresolved missing funds and is threatening Ombudsman referral, indicating a formal complaint requiring urgent human attention.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 494,
+  "output_tokens": 180,
+  "model_seconds": 7.53
+}

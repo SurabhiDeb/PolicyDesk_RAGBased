@@ -21,9 +21,21 @@ VALID_ESCALATE = {"true", "false"}
 DATA_FILE = Path(__file__).parent / "data" / "seed.csv"
 
 
-def main():
+def load_rows():
+    """Read the CSV and normalise it, so nothing downstream has to think about case."""
     with DATA_FILE.open() as f:
         rows = list(csv.DictReader(f))
+
+    for row in rows:
+        row["team"] = row["team"].strip().lower()
+        row["urgency"] = row["urgency"].strip().upper()
+        row["escalate"] = row["escalate"].strip().lower()
+
+    return rows
+
+
+def main():
+    rows = load_rows()
 
     problems = []
     for row in rows:
@@ -60,3 +72,23 @@ def main():
 
 
 main()
+
+"""Validate the Triage seed dataset against SPEC.md.
+
+Reads products/triage/data/seed.csv and reports three things.
+
+1. Legality. Every team, urgency, and escalate value is one the spec allows.
+   This catches typos and silent corruption, for example a spreadsheet
+   rewriting "true" as "TRUE" on save. It does NOT check the labels are
+   correct, only that they are valid values.
+
+2. Class balance. How many messages per team. Any team with fewer than
+   three examples is flagged, because a class that thin cannot be tested
+   meaningfully. You cannot tell a correct answer from a lucky guess.
+
+3. Escalation count. How many messages are flagged for immediate human
+   attention. Per SPEC.md section 11, escalation recall is the metric with
+   the least tolerance for error, so this number is worth watching directly.
+
+Run it after any change to seed.csv, and before any eval run that uses it.
+"""

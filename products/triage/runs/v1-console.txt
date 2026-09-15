@@ -1,0 +1,240 @@
+======================================================================
+#1  There are three payments to a company called SKYLINE MEDIA on my account this morning for £89.99 eac
+
+  raw output : {"team": "fraud_scams", "urgency": "P1", "escalate": true, "reason": "Customer reports unauthorized transactions from an unrecognized company requiring immediate fraud intervention."}
+
+  team       : fraud_scams   (labelled fraud_scams)
+  urgency    : P1   (labelled P1)
+  escalate   : True   (labelled true)
+  cost       : in=492 out=70 4.16s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#2  my card got declined at tesco this morning, really embarrassing, theres definitely money in the acco
+
+  raw output : {"team": "payments_ops", "urgency": "P3", "escalate": false, "reason": "Card declined despite sufficient funds indicates a payment processing issue needing investigation."}
+
+  team       : payments_ops   (labelled frontline)
+  urgency    : P3   (labelled P3)
+  escalate   : False   (labelled false)
+  cost       : in=466 out=63 3.35s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#3  Why is there a payment sitting there saying pending since Friday? It has taken the money but the sho
+
+  raw output : {"team": "payments_ops", "urgency": "P2", "escalate": false, "reason": "Payment stuck in pending status since Friday with funds deducted but not received by merchant."}
+
+  team       : payments_ops   (labelled payments_ops)
+  urgency    : P2   (labelled P3)
+  escalate   : False   (labelled false)
+  cost       : in=475 out=63 3.49s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#4  My husband passed away last month and I need to close his Nimbus account. I don't know what you need
+
+  raw output : {"team": "specialist_care", "urgency": "P2", "escalate": true, "reason": "Bereavement request requiring sensitive human handling for account closure."}
+
+  team       : specialist_care   (labelled specialist_care)
+  urgency    : P2   (labelled P2)
+  escalate   : True   (labelled true)
+  cost       : in=481 out=56 9.39s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#5  I have now asked FOUR TIMES about the £340 that went missing and nobody has come back to me. If I do
+
+  raw output : {"team": "complaints", "urgency": "P1", "escalate": true, "reason": "Customer has repeatedly complained about unresolved missing funds and is threatening Ombudsman referral, indicating a formal complaint requiring urgent human attention."}
+
+  team       : complaints   (labelled complaints)
+  urgency    : P1   (labelled P2)
+  escalate   : True   (labelled true)
+  cost       : in=494 out=180 7.53s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#6  Hi, two things - my card was stolen yesterday so I need it blocked, and also I want to close my acco
+
+  raw output : {"team": "fraud_scams", "urgency": "P1", "escalate": true, "reason": "Stolen card requires immediate blocking to prevent unauthorized use."}
+
+  team       : fraud_scams   (labelled fraud_scams)
+  urgency    : P1   (labelled P1)
+  escalate   : True   (labelled true)
+  cost       : in=485 out=148 5.96s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#7  what do you reckon, should i put my savings into the S&P 500 or keep it in the nimbus pot? whats bet
+
+  raw output : {"team": "frontline", "urgency": "P4", "escalate": false, "reason": "General investment opinion question, not financial advice we can give, low urgency."}
+
+  team       : frontline   (labelled frontline)
+  urgency    : P4   (labelled P4)
+  escalate   : False   (labelled false)
+  cost       : in=476 out=55 3.45s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#8  I am writing to request a copy of all personal data you hold on me under UK GDPR, including call rec
+
+  raw output : {"team": "data_protection", "urgency": "P3", "escalate": false, "reason": "Customer is making a formal subject access request under UK GDPR."}
+
+  team       : data_protection   (labelled data_protection)
+  urgency    : P3   (labelled P3)
+  escalate   : False   (labelled false)
+  cost       : in=476 out=54 3.82s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#9  THIS APP IS ABSOLUTE GARBAGE. Third time this month it's logged me out. Sort it out or I'm leaving.
+
+  raw output : {"team": "frontline", "urgency": "P3", "escalate": false, "reason": "Frustrated single-user app complaint about repeated logouts, not a formal complaint or safety issue."}
+
+  team       : frontline   (labelled frontline)
+  urgency    : P3   (labelled P3)
+  escalate   : False   (labelled false)
+  cost       : in=484 out=66 3.71s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#10  cant log in
+
+  raw output : {"team": "frontline", "urgency": "P3", "escalate": false, "reason": "Single-user login issue with no indication of fraud or urgency."}
+
+  team       : frontline   (labelled frontline)
+  urgency    : P3   (labelled P3)
+  escalate   : False   (labelled false)
+  cost       : in=441 out=53 3.83s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#11  Hello, I noticed I was charged a £5 monthly fee but I'm on the free plan. Could you check? Not urgen
+
+  raw output : {"team": "frontline", "urgency": "P4", "escalate": false, "reason": "Non-urgent billing query about an unexpected fee on a free plan account."}
+
+  team       : frontline   (labelled frontline)
+  urgency    : P4   (labelled P4)
+  escalate   : False   (labelled false)
+  cost       : in=488 out=57 3.97s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#12  The app crashes every time I tap on the Savings tab. iPhone 15, latest iOS. Happens every single tim
+
+  raw output : {"team": "engineering", "urgency": "P3", "escalate": false, "reason": "Reproducible bug affecting app functionality, but not a widespread outage or safety issue."}
+
+  team       : engineering   (labelled engineering)
+  urgency    : P3   (labelled P3)
+  escalate   : False   (labelled false)
+  cost       : in=475 out=62 3.74s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#13  Namaste, mera card kaam nahi kar raha hai UK ke bahar. Please help.
+
+  raw output : {"team": "frontline", "urgency": "P3", "escalate": false, "reason": "Customer reports card not working abroad, a single-user issue best handled by frontline support."}
+
+  team       : frontline   (labelled frontline)
+  urgency    : P3   (labelled P2)
+  escalate   : False   (labelled false)
+  cost       : in=469 out=174 6.27s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#14  I've been out of work for six months and I'm behind on everything. Honestly I don't know how I'm goi
+
+  raw output : {"team": "specialist_care", "urgency": "P1", "escalate": true, "reason": "Customer expresses severe financial hardship and distress language suggesting possible crisis, requiring immediate human attention."}
+
+  team       : specialist_care   (labelled specialist_care)
+  urgency    : P1   (labelled P1)
+  escalate   : True   (labelled true)
+  cost       : in=500 out=233 7.33s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#15  Just wanted to say the new budgeting feature is brilliant, whoever built it deserves a raise.
+
+  raw output : {"team": "frontline", "urgency": "P4", "escalate": false, "reason": "Positive feedback with no issue requiring urgent action."}
+
+  team       : frontline   (labelled frontline)
+  urgency    : P4   (labelled P4)
+  escalate   : False   (labelled false)
+  cost       : in=470 out=51 4.04s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#16  We're a small business with a Nimbus Business account and our payroll run failed this morning. 14 st
+
+  raw output : {"team": "business_support", "urgency": "P1", "escalate": true, "reason": "Business payroll failure affecting 14 employees requires immediate attention to ensure staff are paid."}
+
+  team       : business_support   (labelled business_support)
+  urgency    : P1   (labelled P2)
+  escalate   : True   (labelled true)
+  cost       : in=484 out=65 6.56s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#17  I've raised a chargeback with my old bank for a payment that went through Nimbus. They've told me to
+
+  raw output : {"team": "disputes", "urgency": "P3", "escalate": false, "reason": "Customer requesting merchant reference for an existing chargeback with another bank, not urgent."}
+
+  team       : disputes   (labelled disputes)
+  urgency    : P3   (labelled P3)
+  escalate   : False   (labelled false)
+  cost       : in=480 out=62 4.4s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#18  it's not working
+
+  raw output : {"team": "needs_clarification", "urgency": "P4", "escalate": false, "reason": "Message lacks enough detail to determine the issue or route it appropriately."}
+
+  team       : needs_clarification   (labelled needs_clarification)
+  urgency    : P4   (labelled P3)
+  escalate   : False   (labelled false)
+  cost       : in=441 out=59 3.65s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#19  INVESTMENT OPPORTUNITY - Double your money in 30 days, guaranteed returns, click here to find out mo
+
+  raw output : {"team": "frontline", "urgency": "P4", "escalate": false, "reason": "This is unsolicited spam/promotional content, not a genuine customer support request."}
+
+  team       : frontline   (labelled frontline)
+  urgency    : P4   (labelled P4)
+  escalate   : False   (labelled false)
+  cost       : in=487 out=58 3.67s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)
+======================================================================
+#20  I got a text saying my Nimbus account was suspended and to verify my details, so I clicked it and en
+
+  raw output : {"team": "fraud_scams", "urgency": "P1", "escalate": true, "reason": "Customer likely fell for a phishing scam and disclosed card details, requiring immediate action to secure the account."}
+
+  team       : fraud_scams   (labelled fraud_scams)
+  urgency    : P1   (labelled P1)
+  escalate   : True   (labelled true)
+  cost       : in=490 out=71 3.53s cached=True
+
+Saved run 20260915-121332Z-v1 to /Users/surabhideb/Desktop/chatbot-lab/products/triage/runs/20260915-121332Z-v1.json
+  billed this run $0.0000   (would have been $0.0000 without the cache)

@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"business_support\", \"urgency\": \"P1\", \"escalate\": true, \"reason\": \"Business payroll failure affecting 14 employees requires immediate attention to ensure staff are paid.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 484,
+  "output_tokens": 65,
+  "model_seconds": 6.56
+}

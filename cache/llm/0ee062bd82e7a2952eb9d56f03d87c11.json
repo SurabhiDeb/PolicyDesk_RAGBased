@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"disputes\", \"urgency\": \"P3\", \"escalate\": false, \"reason\": \"Customer requesting merchant reference for an existing chargeback with another bank, not urgent.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 480,
+  "output_tokens": 62,
+  "model_seconds": 4.4
+}
