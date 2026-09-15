@@ -282,7 +282,7 @@
     {
       "team": "specialist_care",
       "urgency": "P2",
-      "escalate": true,
+      "escalate": false,
       "reason": "Customer expresses severe financial difficulty and distress, requiring immediate compassionate human support.",
       "problem": null,
       "raw": "{\"team\": \"specialist_care\", \"urgency\": \"P2\", \"escalate\": true, \"reason\": \"Customer expresses severe financial difficulty and distress, requiring immediate compassionate human support.\"}",
