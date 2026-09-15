@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"disputes\", \"urgency\": \"P3\", \"escalate\": false, \"reason\": \"Customer needs merchant reference for an existing chargeback, a routine dispute support request.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 863,
+  "output_tokens": 122,
+  "model_seconds": 10.4
+}

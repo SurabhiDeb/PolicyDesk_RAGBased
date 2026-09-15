@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"fraud_scams\", \"urgency\": \"P1\", \"escalate\": true, \"reason\": \"Stolen card poses active risk to funds and requires immediate blocking, taking priority over the account closure request.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 868,
+  "output_tokens": 126,
+  "model_seconds": 7.74
+}

@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"specialist_care\", \"urgency\": \"P1\", \"escalate\": true, \"reason\": \"Customer expresses severe financial hardship and distress with language suggesting",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "length",
+  "input_tokens": 883,
+  "output_tokens": 300,
+  "model_seconds": 9.93
+}

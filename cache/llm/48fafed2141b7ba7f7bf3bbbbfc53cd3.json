@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"specialist_care\", \"urgency\": \"P2\", \"escalate\": true, \"reason\": \"Bereavement account closure requiring sensitive human handling within regulatory-style timeframe.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 864,
+  "output_tokens": 65,
+  "model_seconds": 5.19
+}

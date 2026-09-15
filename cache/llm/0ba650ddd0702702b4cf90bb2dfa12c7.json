@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"frontline\", \"urgency\": \"P4\", \"escalate\": false, \"reason\": \"This is spam/promotional content with no genuine customer issue to route.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 870,
+  "output_tokens": 54,
+  "model_seconds": 3.56
+}

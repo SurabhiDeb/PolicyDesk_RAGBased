@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"business_support\", \"urgency\": \"P2\", \"escalate\": true, \"reason\": \"Business payroll payment failure affecting multiple staff needs urgent same-day resolution.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 867,
+  "output_tokens": 62,
+  "model_seconds": 4.32
+}

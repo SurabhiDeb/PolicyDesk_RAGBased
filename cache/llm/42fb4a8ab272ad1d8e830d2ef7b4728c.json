@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"engineering\", \"urgency\": \"P3\", \"escalate\": false, \"reason\": \"Reproducible bug affecting app functionality but no money at risk or single-user emergency.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 858,
+  "output_tokens": 61,
+  "model_seconds": 3.94
+}

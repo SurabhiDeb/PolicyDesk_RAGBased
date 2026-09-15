@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"frontline\", \"urgency\": \"P3\", \"escalate\": false, \"reason\": \"Repeated login issue frustration but single-user app problem with no immediate financial risk.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 867,
+  "output_tokens": 60,
+  "model_seconds": 3.58
+}

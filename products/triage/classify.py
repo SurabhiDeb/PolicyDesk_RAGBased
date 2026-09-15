@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from shared.llm import ask
 
-PROMPT_VERSION = "v1"
+PROMPT_VERSION = "v2"
 PROMPT_PATH = Path(__file__).parent / "prompts" / f"{PROMPT_VERSION}.md"
 DATA_FILE = Path(__file__).parent / "data" / "seed.csv"
 
@@ -60,7 +60,7 @@ def _git_sha():
             capture_output=True, text=True, check=True,
         ).stdout.strip()
         changed = subprocess.run(
-            ["git", "status", "--porcelain"],
+            ["git", "status", "--porcelain", "--untracked-files=no"],
             capture_output=True, text=True, check=True,
         ).stdout.strip()
         return f"{sha}-dirty" if changed else sha
@@ -88,7 +88,7 @@ def _estimate_usd(results, billed_only):
 
 def classify(message):
     """Route one message. Never raises. Records what went wrong instead."""
-    answer = ask(message, system=PROMPT_PATH.read_text(), max_tokens=300)
+    answer = ask(message, system=PROMPT_PATH.read_text(), max_tokens=500)
 
     result = {
         "team": None,
@@ -103,12 +103,22 @@ def classify(message):
         "output_tokens": answer.output_tokens,
         "model_seconds": answer.model_seconds,
         "cached": answer.cached,
+        "finish_reason": answer.finish_reason,
     }
-
+    if answer.finish_reason == "length":
+        result["problem"] = f"truncated at max_tokens ({answer.output_tokens})"
+        result["escalate"] = True
+        result["team"] = "frontline"
+        result["urgency"] = "P2"
+        return result
     try:
         parsed = json.loads(answer.text)
+        
     except json.JSONDecodeError as exc:
         result["problem"] = f"not valid JSON ({exc.msg})"
+        result["escalate"] = True
+        result["team"] = "frontline"
+        result["urgency"] = "P2"
         return result
 
     result["team"] = parsed.get("team")
@@ -182,7 +192,7 @@ def main():
                 "input_tokens": sum(r["input_tokens"] for r in results),
                 "output_tokens": sum(r["output_tokens"] for r in results),
                 "usd_if_all_fresh": _estimate_usd(results, billed_only=False),
-                "usd_billed_this_run": _estimate_usd(results, billed_only=True),
+                "usd_billed_this_run": _estimate_usd(results, billed_only=True),                
             },
             "prompt": prompt_text,
             "results": results,

@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"payments_ops\", \"urgency\": \"P3\", \"escalate\": false, \"reason\": \"Card declined despite sufficient funds is a payment issue needing investigation but not an active emergency.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 849,
+  "output_tokens": 66,
+  "model_seconds": 4.67
+}

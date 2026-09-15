@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "run_id": "20260915-133110Z-v2",
+    "timestamp_utc": "2026-09-15T13:31:10.402484+00:00",
+    "prompt_version": "v2",
+    "prompt_sha": "b54631ded26f",
+    "dataset": "seed.csv",
+    "dataset_sha": "e841eef1b4b0",
+    "git_sha": "ca6d836-dirty",
+    "cases": 1,
+    "models_served": [
+      "anthropic/claude-sonnet-5"
+    ],
+    "cached_cases": 0,
+    "input_tokens": 875,
+    "output_tokens": 69,
+    "usd_if_all_fresh": 0.00244,
+    "usd_billed_this_run": 0.00244
+  },
+  "prompt": "You are a support triage system for Nimbus, a UK consumer money app.\n\nRead one customer message and decide three things.\n\n1. Which team should handle it\n2. How urgent it is\n3. Whether a human must see it immediately\n\n## Teams\n\n- frontline - general questions, single-user app problems, fees, praise, spam\n- fraud_scams - money moved without permission, or the customer was tricked\n- disputes - chargebacks and merchant disputes\n- payments_ops - payments stuck, pending, or failed\n- complaints - formal regulated complaints\n- specialist_care - bereavement, serious illness, severe financial difficulty\n- data_protection - statutory requests for personal data\n- business_support - business account customers\n- engineering - reproducible bugs affecting many users\n- needs_clarification - the message carries no routable signal\n\n## Urgency\n\nUrgency decides which queue the message joins. It is a separate decision\nfrom escalation.\n\n- P1 - first human response within 15 minutes, round the clock.\n  Use when money is actively at risk right now, or a person may come to\n  harm. Fraud in progress, a stolen card, credentials just given to a\n  scammer, someone in real distress.\n\n- P2 - within 4 hours, business hours.\n  Use when something is broken today that costs money or trust, or when a\n  legal or regulatory clock has started. Bereavement, a formal complaint,\n  a business payment failure, a customer stranded without a working card.\n\n- P3 - within 24 hours, business hours.\n  The default. Ordinary problems that need a human but are not costing\n  anyone anything right now. Use this when nothing above applies.\n\n- P4 - within 72 hours, business hours.\n  Use only when no action is really needed, or the customer says it is not\n  urgent. Praise, spam, out-of-scope questions, explicit \"no rush\".\n\nTwo rules.\n\n1. P1 means waking someone at 3am. If it does not justify that, it is not P1.\n2. Setting escalate to true does NOT make something P1. They are independent.\n   A bereavement is escalated and P2. A formal complaint is escalated and P2.\n   Judge urgency on its own.\n\nIf the message is needs_clarification, use P3.\n\n## Escalation\n\nSet escalate to true when a human must see this immediately, regardless of\nhow busy the queue is.\n\n## Output\n\nReply with only a JSON object, no other text.\n\n{\"team\": \"...\", \"urgency\": \"...\", \"escalate\": true, \"reason\": \"...\"}\n\nreason is one short sentence explaining the routing.",
+  "results": [
+    {
+      "team": "fraud_scams",
+      "urgency": "P1",
+      "escalate": true,
+      "reason": "Customer reports unauthorized transactions on their account occurring this morning, indicating active fraud risk.",
+      "problem": null,
+      "raw": "{\"team\": \"fraud_scams\", \"urgency\": \"P1\", \"escalate\": true, \"reason\": \"Customer reports unauthorized transactions on their account occurring this morning, indicating active fraud risk.\"}",
+      "model": "anthropic/claude-sonnet-5",
+      "prompt_version": "v2",
+      "input_tokens": 875,
+      "output_tokens": 69,
+      "model_seconds": 4.98,
+      "cached": false,
+      "id": "1",
+      "message": "There are three payments to a company called SKYLINE MEDIA on my account this morning for \u00a389.99 each. I have never heard of them. I did not make these. Please stop this now.",
+      "labelled_team": "fraud_scams",
+      "labelled_urgency": "P1",
+      "labelled_escalate": "true"
+    }
+  ]
+}

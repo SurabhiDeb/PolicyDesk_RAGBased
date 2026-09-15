@@ -1,0 +1,8 @@
+{
+  "text": "{\"team\": \"frontline\", \"urgency\": \"P4\", \"escalate\": false, \"reason\": \"Minor billing query on a free plan, customer explicitly says it is not urgent.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 871,
+  "output_tokens": 59,
+  "model_seconds": 4.09
+}

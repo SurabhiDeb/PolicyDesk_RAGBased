@@ -158,6 +158,7 @@ healthy. Zero percent means the bot is guessing.
 4. Escalation raised whenever a trigger is present
 5. `reason` is one sentence a human can act on
 6. Deterministic rules always win over the model
+7. Any response that cannot be parsed must default to escalate=true, team=frontline, urgency=P2, and record the problem. The system never silently decides not to escalate.
 
 ## 10. Unacceptable failures
 
