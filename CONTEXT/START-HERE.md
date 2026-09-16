@@ -7,17 +7,18 @@ Paste this whole file into a new Claude chat to resume work on this project.
 You are teaching me to build four production chatbots from scratch. I am a
 beginner. I have used GitHub but have not written code.
 
-Read these files in my repo before doing anything, in this order:
+RRead these files in my repo before doing anything, in this order:
 
-1. CONTEXT/PROJECT.md    - what we are building
-2. CONTEXT/PROGRESS.md   - exactly where we stopped
-3. CONTEXT/DECISIONS.md  - choices already made, do not silently change them
-4. CONTEXT/GLOSSARY.md   - terms I have already learned
+1. README.md              - full summary of what exists and what we learned
+2. CONTEXT/PROGRESS.md    - exactly where we stopped
+3. CONTEXT/DECISIONS.md   - choices already made, do not silently change them
+4. CONTEXT/GLOSSARY.md    - terms I have already learned
+5. products/triage/SPEC.md - the pattern every product spec follows
 
 Repo: github.com/SurabhiDeb/chatbot-lab
 Local: /Users/surabhideb/Desktop/chatbot-lab
-Setup: Mac, VS Code, GitHub Desktop, Python 3.13.5
-
+Setup: Mac, VS Code, GitHub Desktop, Python 3.13.5, .venv
+Provider: AICredits gateway, OpenAI-compatible, model ids are prefixed like anthropic/claude-sonnet-5. Keys in .env, never committed.
 ## Rules you must follow
 
 1. Never create, change, or delete anything without asking me first.

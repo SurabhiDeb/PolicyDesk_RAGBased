@@ -26,3 +26,26 @@ being asked for first. Reversing this defeats the purpose of the project.
 14 Sept 2026. Chat sessions lose their memory. The CONTEXT folder is the
 source of truth, so any new session can be brought fully up to speed by
 pasting CONTEXT/START-HERE.md.
+
+## D6. AICredits gateway, not the Anthropic API directly
+15 Sept 2026. OpenAI-compatible, so we use the openai library. All model
+calls go through shared/llm.py, which is the only file that knows this.
+Swapping providers is an edit to that one file.
+
+## D7. Responses are cached to disk, keyed by request fingerprint
+15 Sept 2026. Makes repeat runs free and makes scores reproducible.
+Temperature 0 is not deterministic, so without this a score change could
+be noise rather than a real change.
+
+## D8. Prompt v2 shipped, v3 deferred
+15 Sept 2026. Urgency 75% to 85%. Known issues recorded in README rather
+than fixed, because the dataset is too small to measure further work.
+
+## D9. Promptfoo added for comparison only
+15 Sept 2026. It does the matrix. score.py measures, gate.py enforces,
+promptfoo compares. Our harness stays for provenance and the CI gate.
+
+## D10. The goal is not a green matrix
+15 Sept 2026. Every red cell must be explained, as a harness bug, a wrong
+label, or a real model failure. Tuning until everything passes is
+overfitting to our own test set.
