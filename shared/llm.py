@@ -23,7 +23,7 @@ from openai import OpenAI
 
 load_dotenv()
 
-DEFAULT_MODEL = "anthropic/claude-sonnet-5"
+DEFAULT_MODEL = "anthropic/claude-haiku-4.5"
 CACHE_DIR = Path(__file__).resolve().parent.parent / "cache" / "llm"
 
 for _name in ("AICREDITS_API_KEY", "AICREDITS_BASE_URL"):
