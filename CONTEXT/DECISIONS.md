@@ -49,3 +49,22 @@ promptfoo compares. Our harness stays for provenance and the CI gate.
 15 Sept 2026. Every red cell must be explained, as a harness bug, a wrong
 label, or a real model failure. Tuning until everything passes is
 overfitting to our own test set.
+
+## D11. Nimbus is one company across all four products
+16 Sept 2026. Triage routes, PolicyDesk answers policy, OpsAgent acts,
+Coach converses. One world means specs reference each other instead of
+re-inventing vocabulary, and the four products compound into something
+resembling a real support stack.
+
+## D12. PolicyDesk serves two audiences under one spec
+16 Sept 2026. Agent-assist and customer-facing, one retrieval core, two
+answer contracts. The cost of this choice is an access-control boundary
+inside retrieval, because some articles are internal-only. That boundary is
+C1, the most severe failure in the spec.
+
+## D13. Tools do the bookkeeping, hands do the judgement
+16 Sept 2026. Product 1 was hand-run to teach the mechanism. From Product 2,
+anything that only needs recording or comparing gets a real tool. Anything
+requiring a decision stays manual. Specifically manual: writing specs,
+labelling the golden set, reading every output in Beat 3, and validating any
+LLM judge against hand labels.
