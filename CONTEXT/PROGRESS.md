@@ -9,9 +9,16 @@ Ready to start Product 2 (PolicyDesk, RAG).
 
 ## Next step
 
-Product 2, Beat 7. Service layer. FastAPI, API key auth, rate limiting,
-PII redaction in logs, health check, Docker.
+Product 2, Beat 8, the last one. Ingestion the real way. A Zendesk-shaped
+source, incremental sync on updated_at, HTML body parsing, upserts instead of
+rebuilding the index from scratch.
 
+## Product 2 service layer, Beat 7 done
+  POST /ask with API key auth, 20/min rate limit, 422 on bad input
+  GET /health returning 503 when degraded
+  PII redacted in logs and in Langfuse traces
+  Dockerfile, non-root, no secrets in the image
+  Known limits: in-memory rate limiter, Postgres and Langfuse not in compose
 ## Product 2 current, prompt v4, retriever filtered-v1, Haiku 4.5
   recall@5 100%, recall@1 96.4%, MRR 0.98
   abstention recall 86.4% (target 95%), precision 95.0%

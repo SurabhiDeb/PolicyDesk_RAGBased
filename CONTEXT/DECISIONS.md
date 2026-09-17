@@ -106,3 +106,23 @@ three failures are recorded as known limitations instead.
 another. v3 fixed abstention recall and broke four working cases, v4 fixed
 those and lost two others. Diminishing returns. The remaining three failures
 need a different kind of fix, not a fifth prompt.
+
+## D19. The audience comes from the API key, never from the request
+17 Sept 2026. The first /ask took `audience` as a body field, which meant
+any caller could declare itself an agent and read internal articles. Every
+visibility rule from D15 was bypassable with one word of JSON. A key now maps
+to an audience and the caller never chooses. C1 is enforced in three places:
+the SQL filter, the key mapping, and the CI gate.
+
+## D20. Redaction is applied to traces as well as logs
+17 Sept 2026. The access log never contained the question, but Langfuse was
+storing every one in full. Logs feel like the risky place and the tracer does
+not, which is how this is usually missed. shared/redact.py is wired into the
+Langfuse client's mask hook. Traces created before this still hold real card
+numbers, because redaction only protects what you collect next.
+
+## D21. Secrets never enter the image
+17 Sept 2026. .env is in .dockerignore. Images go to registries, get pulled
+by anyone with access, and their layers are readable. Configuration arrives
+at runtime as environment variables, which is also why shared/db.py has read
+its DSN from the environment since Beat 2.
