@@ -9,7 +9,8 @@ Ready to start Product 2 (PolicyDesk, RAG).
 
 ## Next step
 
-Product 2, Beat 3. Stand up Langfuse in Docker, then run the 50.
+Product 2, Beat 4. Retrieval metrics, pytest, structured outputs, ragas.
+Do not touch retrieval or the prompt yet, v1 is the baseline.
 
 ## Product 1, Triage - done
 
