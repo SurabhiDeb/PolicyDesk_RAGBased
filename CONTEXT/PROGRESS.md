@@ -9,8 +9,13 @@ Ready to start Product 2 (PolicyDesk, RAG).
 
 ## Next step
 
-Product 2, Beat 5. Wire the tests and the eval gate into GitHub Actions.
-The build is deliberately red on C1 until Beat 6 fixes retrieval.
+Product 2, Beat 6. Four changes, one variable each, in this order.
+  v2  retrieval filter on visibility, status and supersedes
+  v3  prompt rules for scope, contradiction, abstention and citations
+  v4  hybrid retrieval plus a reranker, on LangChain
+  then Haiku against Sonnet as a matrix, with ragas as a second opinion
+
+CI is deliberately red on C1 until v2 lands.
 
 ## Product 2 baseline, prompt v1, Haiku 4.5, 50 cases
   recall@5   96.4%, recall@1 71.4%, MRR 0.84
