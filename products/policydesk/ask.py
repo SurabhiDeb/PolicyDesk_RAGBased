@@ -17,6 +17,7 @@ from shared.llm import ask as ask_model  # noqa: E402
 from shared.tracing import flush, observation, trace_attributes, trace_url  # noqa: E402
 
 from retrieve import search  # noqa: E402
+from text import strip_fences  # noqa: E402
 
 HERE = Path(__file__).parent
 PROMPT = HERE / "prompts" / "v1.md"
@@ -32,13 +33,6 @@ def build_context(hits: list[dict]) -> str:
         for h in hits
     )
 
-
-def strip_fences(text: str) -> str:
-    text = text.strip()
-    if text.startswith("```"):
-        text = text.split("\n", 1)[1] if "\n" in text else text
-        text = text.rsplit("```", 1)[0]
-    return text.strip()
 
 
 def answer(

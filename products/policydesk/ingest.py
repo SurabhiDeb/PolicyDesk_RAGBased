@@ -13,6 +13,7 @@ import numpy as np
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from shared.db import DSN, connect  # noqa: E402
 from shared.embed import EMBED_MODEL, embed  # noqa: E402
+from text import split_sections  # noqa: E402
 
 HERE = Path(__file__).parent
 ARTICLES = HERE / "data" / "articles.jsonl"
@@ -25,24 +26,6 @@ INSERT INTO chunks
 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
 """
 
-
-def split_sections(article: dict) -> list[dict]:
-    """One chunk per '## ' heading. Help articles are already structured."""
-    chunks, heading, buf = [], None, []
-
-    def flush():
-        text = "\n".join(buf).strip()
-        if text and heading:
-            chunks.append({"section": heading, "text": text})
-
-    for line in article["body"].splitlines():
-        if line.startswith("## "):
-            flush()
-            heading, buf = line[3:].strip(), []
-        else:
-            buf.append(line)
-    flush()
-    return chunks
 
 
 def main():
