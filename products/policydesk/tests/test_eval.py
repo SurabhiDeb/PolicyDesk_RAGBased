@@ -82,18 +82,17 @@ def test_recall_at_1(results):
     at_one = sum(1 for r in gold if first_gold_rank(r) == 1)
     assert at_one / len(gold) >= 0.80, f"recall@1 {at_one / len(gold):.0%}"
 
+def test_every_answerable_case_retrieves_its_article(results):
+    gold = [r for r in results if r["expected_articles"]]
+    missed = [r["id"] for r in gold if first_gold_rank(r) is None]
+    assert missed == [], f"gold article never retrieved for {missed}"
 
 # --- Known gaps. Expected to fail until the beat that fixes them. ---
 
-
-@pytest.mark.xfail(strict=True, reason="Beat 6, prompt has no scope or contradiction rules")
+@pytest.mark.xfail(strict=True, reason="q34, q35 contradiction and q37 scope, see runs/v4-notes.md")
 def test_abstention_recall(results):
     a = abstention(results)
     assert a["recall"] >= 0.95, f"abstention recall {a['recall']:.0%}"
 
 
-@pytest.mark.xfail(strict=True, reason="Beat 6, q18 gold article never retrieved")
-def test_every_answerable_case_retrieves_its_article(results):
-    gold = [r for r in results if r["expected_articles"]]
-    missed = [r["id"] for r in gold if first_gold_rank(r) is None]
-    assert missed == [], f"gold article never retrieved for {missed}"
+
