@@ -68,3 +68,11 @@ anything that only needs recording or comparing gets a real tool. Anything
 requiring a decision stays manual. Specifically manual: writing specs,
 labelling the golden set, reading every output in Beat 3, and validating any
 LLM judge against hand labels.
+
+## D14. Build the real stack, not the small-data version
+16 Sept 2026. Product 2 adds Langfuse tracing, structured outputs, hybrid
+retrieval with reranking on LangChain, a FastAPI service layer with auth and
+rate limiting, and incremental Zendesk-shaped ingestion. The dataset being
+small is not a reason to build a toy. Where live infrastructure genuinely
+does not exist, we build the same shape against a local source so switching
+is a credentials change, not a redesign.

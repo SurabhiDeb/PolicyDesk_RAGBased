@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"If you did not authorise a payment that left your account, you should report it as fraud rather than a refund matter. If it's a duplicate payment for something you did purchase, report it in the app and Nimbus will verify it against the payment record.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-106\",\n      \"section\": \"When we cannot refund / Payments you authorised\",\n      \"quote\": \"If you did not authorise it, report it as fraud instead.\"\n    },\n    {\n      \"article_id\": \"NIM-105\",\n      \"section\": \"Duplicate payments / What we need from you\",\n      \"quote\": \"Report it in the app and we verify it against the payment record ourselves.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 366,
+  "output_tokens": 210,
+  "model_seconds": 2.37
+}

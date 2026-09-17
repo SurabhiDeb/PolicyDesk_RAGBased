@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Nimbus can refund a payment made in error, a subscription cancelled within its cooling off period, or a duplicate payment.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-101\",\n      \"section\": \"What we can refund\",\n      \"quote\": \"Nimbus can refund a payment made in error, a subscription cancelled within its cooling off period, or a duplicate payment.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 406,
+  "output_tokens": 140,
+  "model_seconds": 1.72
+}

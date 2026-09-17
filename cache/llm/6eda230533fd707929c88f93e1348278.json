@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"According to Nimbus's 2024 refund policy, Nimbus refunds payments made in error within 30 days of the payment date. Requests after 30 days are declined.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-099\",\n      \"section\": \"Refunds\",\n      \"quote\": \"Nimbus refunds payments made in error within 30 days of the payment date. Requests after 30 days are declined.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 410,
+  "output_tokens": 158,
+  "model_seconds": 1.45
+}

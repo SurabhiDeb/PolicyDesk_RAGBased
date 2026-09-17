@@ -13,6 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from shared.embed import EMBED_MODEL  # noqa: E402
+from shared.tracing import flush  # noqa: E402
 
 from ask import MODEL, PROMPT, answer  # noqa: E402
 
@@ -65,7 +66,7 @@ def main():
 
     results = []
     for i, q in enumerate(questions, start=1):
-        out = answer(q["question"], q["audience"], k)
+        out = answer(q["question"], q["audience"], k, question_id=q["id"], run_id=run_id)
         results.append({**q, **out})
         mark = "." if not out["problem"] else "!"
         print(f"{mark} {i:>2}/{len(questions)}  {q['id']}  {out['status']}")
@@ -112,6 +113,7 @@ def main():
     RUNS.mkdir(parents=True, exist_ok=True)
     path = RUNS / f"{run_id}.json"
     path.write_text(json.dumps(record, indent=2))
+    flush()
 
     m = record["meta"]
     print(f"\nrun {run_id}, {n} cases, k={k}")

@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Yes, you can request a refund for an App Store subscription. Contact Nimbus to request a refund and Nimbus can raise the refund on your behalf. You will need to provide the date of the charge and the name of the app.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-108\",\n      \"section\": \"Subscriptions bought in an app store\",\n      \"quote\": \"Where a subscription was purchased through the Apple App Store or Google Play using your Nimbus card, contact Nimbus to request a refund. We can raise the refund on your behalf.\"\n    },\n    {\n      \"article_id\": \"NIM-108\",\n      \"section\": \"What we need\",\n      \"quote\": \"The date of the charge and the name of the app.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 412,
+  "output_tokens": 231,
+  "model_seconds": 2.48
+}

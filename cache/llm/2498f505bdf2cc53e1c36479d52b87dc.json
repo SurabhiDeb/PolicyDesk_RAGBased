@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"No, you do not need to send a receipt for a duplicate payment. You should report it in the app and Nimbus will verify it against the payment record themselves.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-105\",\n      \"section\": \"What we need from you\",\n      \"quote\": \"Nothing. Report it in the app and we verify it against the payment record ourselves.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 344,
+  "output_tokens": 140,
+  "model_seconds": 1.22
+}

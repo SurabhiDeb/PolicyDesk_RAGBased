@@ -9,8 +9,7 @@ Ready to start Product 2 (PolicyDesk, RAG).
 
 ## Next step
 
-Product 2, Beat 1. Read CONTEXT/PROJECT.md, then write the spec for
-PolicyDesk the same way we did for Triage.
+Product 2, Beat 3. Stand up Langfuse in Docker, then run the 50.
 
 ## Product 1, Triage - done
 

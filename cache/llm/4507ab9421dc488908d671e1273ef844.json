@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Yes, an agent can issue a goodwill refund of up to 50 pounds without requiring approval, provided that your complaint is reasonable and Nimbus policy does not require a refund.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-201\",\n      \"section\": \"Goodwill refund limits / Agent discretion\",\n      \"quote\": \"Agents may issue a goodwill refund of up to 50 pounds without approval where the customer's complaint is reasonable and policy does not require a refund.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 378,
+  "output_tokens": 170,
+  "model_seconds": 2.37
+}

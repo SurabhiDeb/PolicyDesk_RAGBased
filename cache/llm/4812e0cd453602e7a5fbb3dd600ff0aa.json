@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Refund timescales depend on the destination. For refunds to your Nimbus account, they typically take 3 to 5 business days once approved, though some sources indicate 5 to 10 business days. For refunds to a debit card, they usually arrive within 5 business days, but can take up to 15 business days as the card scheme controls the final step. Overall, refunds generally take 10 to 20 business days.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-099\",\n      \"section\": \"Timescales\",\n      \"quote\": \"Refunds take 10 to 20 business days.\"\n    },\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"How long a refund takes\",\n      \"quote\": \"Once approved, a refund reaches your Nimbus account within 3 to 5 business days.\"\n    },\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"Card payments\",\n      \"quote\": \"Refunds to a debit card usually arrive within 5 business days. The card scheme controls the final step.\"\n    },\n    {\n      \"article_id\": \"NIM-103\",\n      \"section\": \"Card payments\",\n      \"quote\": \"Refunds to a debit card can take up to 15 business days, because the card scheme controls the final step.\"\n    }\n  ],\n  \"confidence\": \"medium\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 372,
+  "output_tokens": 386,
+  "model_seconds": 2.57
+}

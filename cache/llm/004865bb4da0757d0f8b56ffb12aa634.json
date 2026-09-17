@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [],\n  \"confidence\": \"medium\",\n  \"handoff_reason\": \"Cryptocurrency refunds are under review and the help article explicitly states it must not be relied on for guidance.\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 375,
+  "output_tokens": 73,
+  "model_seconds": 1.55
+}

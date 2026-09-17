@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"For refunds on a business account, you should contact your account manager, not general support. Business account refunds follow the terms in your business agreement, not the consumer terms.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-107\",\n      \"section\": \"Who to contact\",\n      \"quote\": \"Business refund requests go to your account manager, not to general support.\"\n    },\n    {\n      \"article_id\": \"NIM-107\",\n      \"section\": \"Refunds on Nimbus Business\",\n      \"quote\": \"Business account refunds follow the terms in your business agreement, not the consumer terms in this help centre.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 358,
+  "output_tokens": 198,
+  "model_seconds": 1.67
+}

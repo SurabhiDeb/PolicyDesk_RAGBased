@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"To request a refund, open the Nimbus app, go to Payments, select the payment, and choose Request a refund. You will be asked for a reason. We review the request and tell you the outcome. Most requests are reviewed within one business day. Note: Payments older than 180 days cannot be refunded through the app, so you'll need to contact support instead.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-102\",\n      \"section\": \"Requesting a refund\",\n      \"quote\": \"Open the Nimbus app, go to Payments, select the payment, and choose Request a refund. You will be asked for a reason.\"\n    },\n    {\n      \"article_id\": \"NIM-102\",\n      \"section\": \"If the app will not let you\",\n      \"quote\": \"Payments older than 180 days cannot be refunded through the app. Contact support instead.\"\n    },\n    {\n      \"article_id\": \"NIM-102\",\n      \"section\": \"What happens next\",\n      \"quote\": \"We review the request and tell you the outcome. Most requests are reviewed within one business day.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 361,
+  "output_tokens": 315,
+  "model_seconds": 3.65
+}

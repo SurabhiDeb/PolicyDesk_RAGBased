@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [],\n  \"confidence\": \"high\",\n  \"handoff_reason\": \"This request involves a sensitive circumstance (bereavement) and potential special considerations that are not covered in the available help articles, requiring specialist support.\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 388,
+  "output_tokens": 81,
+  "model_seconds": 1.51
+}

@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [],\n  \"confidence\": \"high\",\n  \"handoff_reason\": \"The help articles provided do not contain information about whether a third party or spouse can request a refund on behalf of another account holder.\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 361,
+  "output_tokens": 78,
+  "model_seconds": 1.47
+}

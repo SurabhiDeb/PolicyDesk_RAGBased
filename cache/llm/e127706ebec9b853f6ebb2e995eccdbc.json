@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Refunds typically take 10 to 20 business days. If your refund has not arrived after 15 business days, please contact support. If your original payment was more than 180 days ago, you'll need to contact support as refunds through the app are not available for payments older than 180 days.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-099\",\n      \"section\": \"Timescales\",\n      \"quote\": \"Refunds take 10 to 20 business days.\"\n    },\n    {\n      \"article_id\": \"NIM-103\",\n      \"section\": \"Delays\",\n      \"quote\": \"If your refund has not arrived after 15 business days, contact support.\"\n    },\n    {\n      \"article_id\": \"NIM-102\",\n      \"section\": \"If the app will not let you\",\n      \"quote\": \"Payments older than 180 days cannot be refunded through the app. Contact support instead.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 360,
+  "output_tokens": 281,
+  "model_seconds": 2.89
+}
