@@ -9,8 +9,15 @@ Ready to start Product 2 (PolicyDesk, RAG).
 
 ## Next step
 
-Product 2, Beat 4. Retrieval metrics, pytest, structured outputs, ragas.
-Do not touch retrieval or the prompt yet, v1 is the baseline.
+Product 2, Beat 5. Wire the tests and the eval gate into GitHub Actions.
+The build is deliberately red on C1 until Beat 6 fixes retrieval.
+
+## Product 2 baseline, prompt v1, Haiku 4.5, 50 cases
+  recall@5   96.4%, recall@1 71.4%, MRR 0.84
+  abstention recall 54.5% against a 95% target
+  groundedness 83% against 98%, judge Sonnet 5
+  8 cases cite a banned article, 3 of them C1
+  30 of 50 clean, taxonomy in runs/v1-notes.md
 
 ## Product 1, Triage - done
 

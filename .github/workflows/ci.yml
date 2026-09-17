@@ -3,7 +3,7 @@ name: CI
 on: push
 
 jobs:
-  eval-gate:
+  triage:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,3 +17,23 @@ jobs:
 
       - name: Enforce the eval gate
         run: python3 products/triage/gate.py
+
+  policydesk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install test dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Tests and evals
+        run: python3 -m pytest products/policydesk/tests -v
+
+      - name: Print the metrics report
+        if: always()
+        run: python3 products/policydesk/score.py
