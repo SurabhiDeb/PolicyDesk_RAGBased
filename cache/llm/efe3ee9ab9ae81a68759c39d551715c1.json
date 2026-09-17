@@ -1,0 +1,8 @@
+{
+  "text": "{\"grounded\": true, \"unsupported\": []}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 307,
+  "output_tokens": 279,
+  "model_seconds": 7.82
+}

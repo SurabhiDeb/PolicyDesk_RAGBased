@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"grounded\": true,\n  \"unsupported\": []\n}\n```",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 324,
+  "output_tokens": 28,
+  "model_seconds": 3.39
+}

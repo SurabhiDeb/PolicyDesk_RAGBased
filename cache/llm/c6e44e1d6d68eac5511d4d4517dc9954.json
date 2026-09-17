@@ -1,0 +1,8 @@
+{
+  "text": "{\n  \"grounded\": false,\n  \"unsupported\": [\n    \"This customer should be treated as vulnerable.\",\n    \"Handle their refund request with discretion, and note that normal refund limits may be waived at specialist care's discretion if appropriate.\"\n  ]\n}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 358,
+  "output_tokens": 710,
+  "model_seconds": 12.66
+}

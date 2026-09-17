@@ -1,0 +1,304 @@
+{
+  "run_id": "20260917-071445Z-v1",
+  "judge_model": "anthropic/claude-sonnet-5",
+  "judge_prompt": "judge-v1.md",
+  "cases": 35,
+  "grounded": 29,
+  "verdicts": [
+    {
+      "id": "q01",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 437,
+      "output_tokens": 203
+    },
+    {
+      "id": "q02",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 312,
+      "output_tokens": 31
+    },
+    {
+      "id": "q03",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 324,
+      "output_tokens": 28
+    },
+    {
+      "id": "q04",
+      "grounded": false,
+      "unsupported": [
+        "If you have used the service during those 5 days, we will refund the unused portion, calculated daily."
+      ],
+      "cached": false,
+      "input_tokens": 390,
+      "output_tokens": 248
+    },
+    {
+      "id": "q05",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 303,
+      "output_tokens": 201
+    },
+    {
+      "id": "q06",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 284,
+      "output_tokens": 36
+    },
+    {
+      "id": "q07",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 282,
+      "output_tokens": 31
+    },
+    {
+      "id": "q08",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 335,
+      "output_tokens": 96
+    },
+    {
+      "id": "q09",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 300,
+      "output_tokens": 35
+    },
+    {
+      "id": "q10",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 305,
+      "output_tokens": 74
+    },
+    {
+      "id": "q11",
+      "grounded": false,
+      "unsupported": [
+        "No, you should not request a refund if your payment is still pending."
+      ],
+      "cached": false,
+      "input_tokens": 320,
+      "output_tokens": 254
+    },
+    {
+      "id": "q12",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 309,
+      "output_tokens": 209
+    },
+    {
+      "id": "q13",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 262,
+      "output_tokens": 18
+    },
+    {
+      "id": "q14",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 288,
+      "output_tokens": 27
+    },
+    {
+      "id": "q15",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 378,
+      "output_tokens": 209
+    },
+    {
+      "id": "q16",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 331,
+      "output_tokens": 18
+    },
+    {
+      "id": "q17",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 274,
+      "output_tokens": 18
+    },
+    {
+      "id": "q28",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 281,
+      "output_tokens": 35
+    },
+    {
+      "id": "q31",
+      "grounded": false,
+      "unsupported": [
+        "Refund timescales depend on the destination.",
+        "For refunds to your Nimbus account, they typically take 3 to 5 business days once approved, though some sources indicate 5 to 10 business days."
+      ],
+      "cached": false,
+      "input_tokens": 470,
+      "output_tokens": 991
+    },
+    {
+      "id": "q32",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 343,
+      "output_tokens": 147
+    },
+    {
+      "id": "q34",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 351,
+      "output_tokens": 141
+    },
+    {
+      "id": "q35",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 452,
+      "output_tokens": 428
+    },
+    {
+      "id": "q37",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 384,
+      "output_tokens": 293
+    },
+    {
+      "id": "q38",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 273,
+      "output_tokens": 45
+    },
+    {
+      "id": "q39",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 340,
+      "output_tokens": 28
+    },
+    {
+      "id": "q40",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 343,
+      "output_tokens": 33
+    },
+    {
+      "id": "q42",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 321,
+      "output_tokens": 36
+    },
+    {
+      "id": "q43",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 379,
+      "output_tokens": 210
+    },
+    {
+      "id": "q44",
+      "grounded": false,
+      "unsupported": [
+        "If it's a duplicate payment for something you did purchase, report it in the app and Nimbus will verify it against the payment record."
+      ],
+      "cached": false,
+      "input_tokens": 344,
+      "output_tokens": 74
+    },
+    {
+      "id": "q45",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 326,
+      "output_tokens": 52
+    },
+    {
+      "id": "q46",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 307,
+      "output_tokens": 279
+    },
+    {
+      "id": "q47",
+      "grounded": false,
+      "unsupported": [
+        "This customer should be treated as vulnerable.",
+        "Handle their refund request with discretion, and note that normal refund limits may be waived at specialist care's discretion if appropriate."
+      ],
+      "cached": false,
+      "input_tokens": 358,
+      "output_tokens": 710
+    },
+    {
+      "id": "q48",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 276,
+      "output_tokens": 29
+    },
+    {
+      "id": "q49",
+      "grounded": false,
+      "unsupported": [
+        "Refund timescales depend on the destination.",
+        "For refunds to your Nimbus account, they typically take 3 to 5 business days once approved, though some sources indicate 5 to 10 business days."
+      ],
+      "cached": true,
+      "input_tokens": 470,
+      "output_tokens": 991
+    },
+    {
+      "id": "q50",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 374,
+      "output_tokens": 298
+    }
+  ]
+}

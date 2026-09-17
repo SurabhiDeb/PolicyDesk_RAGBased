@@ -1,0 +1,8 @@
+{
+  "text": "{\"grounded\": false, \"unsupported\": [\"If you have used the service during those 5 days, we will refund the unused portion, calculated daily.\"]}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 390,
+  "output_tokens": 257,
+  "model_seconds": 7.58
+}
