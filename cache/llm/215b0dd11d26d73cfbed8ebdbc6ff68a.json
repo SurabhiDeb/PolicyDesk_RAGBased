@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [],\n  \"confidence\": \"high\",\n  \"handoff_reason\": \"This question concerns a specific situation involving a merchant's business status, which is not covered by the provided help articles and requires assessment of your individual account and payment details.\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 651,
+  "output_tokens": 84,
+  "model_seconds": 1.44
+}

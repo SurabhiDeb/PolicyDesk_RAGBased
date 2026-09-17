@@ -87,3 +87,22 @@ unrecoverable if it were ever republished.
 Measured effect: C1 breaches 3 to 0, banned citations 8 to 0, and
 unexpectedly recall@1 71% to 93%, because the superseded article had been
 outranking the live one.
+
+## D16. Scope is decided by the question, not by the answer
+17 Sept 2026. A refund question is PolicyDesk's even when the answer is no,
+or that it must be reported as fraud, or that another team handles it. Only
+the question's subject decides scope. The v3 prompt got this backwards and
+broke four working cases by treating "the answer is no" as "out of scope".
+
+## D17. Contradictory and out-of-scope articles stay in the corpus
+17 Sept 2026. NIM-108 and NIM-109 contradict, and NIM-120 covers chargebacks
+which are out of scope. Deleting either would turn q34, q35 and q37 green.
+Refused. They were planted to test contradiction handling and scope, so
+removing them removes the test and buys a number that means nothing. The
+three failures are recorded as known limitations instead.
+
+## D18. Prompt iteration stops at v4
+17 Sept 2026. Four prompt versions, and every edit traded one case for
+another. v3 fixed abstention recall and broke four working cases, v4 fixed
+those and lost two others. Diminishing returns. The remaining three failures
+need a different kind of fix, not a fifth prompt.

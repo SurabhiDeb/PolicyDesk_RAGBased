@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Yes, Nimbus can refund a subscription purchased through the Apple App Store using your Nimbus card. You should contact Nimbus to request the refund, and Nimbus can raise it on your behalf.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-108\",\n      \"section\": \"Subscriptions bought in an app store\",\n      \"quote\": \"Where a subscription was purchased through the Apple App Store or Google Play using your Nimbus card, contact Nimbus to request a refund. We can raise the refund on your behalf.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 961,
+  "output_tokens": 177,
+  "model_seconds": 1.57
+}

@@ -18,9 +18,10 @@ from shared.tracing import flush, observation, trace_attributes, trace_url  # no
 
 from retrieve import search  # noqa: E402
 from text import strip_fences  # noqa: E402
+from text import first_json  # noqa: E402
 
 HERE = Path(__file__).parent
-PROMPT = HERE / "prompts" / "v1.md"
+PROMPT = HERE / "prompts" / "v4.md"
 MODEL = "anthropic/claude-haiku-4.5"
 MAX_TOKENS = 600
 
@@ -99,7 +100,7 @@ def answer(
 
             problem = None
             try:
-                parsed = json.loads(strip_fences(reply.text))
+                parsed = parsed = first_json(reply.text)
             except json.JSONDecodeError as e:
                 parsed, problem = {}, f"unparseable: {e}"
 

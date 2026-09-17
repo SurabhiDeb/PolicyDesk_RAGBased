@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"If a merchant will not refund you and you paid by card, you may be able to raise a chargeback under the card scheme rules. This would be handled by the disputes team rather than as a standard refund request.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-120\",\n      \"section\": \"When to raise a dispute\",\n      \"quote\": \"If a merchant will not refund you and you paid by card, you may be able to raise a chargeback under the card scheme rules.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 783,
+  "output_tokens": 165,
+  "model_seconds": 2.09
+}

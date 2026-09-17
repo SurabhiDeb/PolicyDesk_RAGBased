@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [],\n  \"confidence\": \"high\",\n  \"handoff_reason\": \"This question is about a specific account, payment, or order and requires account verification and individual assessment, which should be handled by the Nimbus support team directly.\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 722,
+  "output_tokens": 84,
+  "model_seconds": 1.27
+}

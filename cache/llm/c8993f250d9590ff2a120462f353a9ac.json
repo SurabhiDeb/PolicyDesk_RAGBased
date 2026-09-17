@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"If money left your account for something you never bought, you should report it as fraud rather than request a refund. {NIM-106, When we cannot refund / Payments you authorised, \\\"A payment you authorised and recognise is not a refund matter. If you did not authorise it, report it as fraud instead.\\\"}\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-106\",\n      \"section\": \"When we cannot refund / Payments you authorised\",\n      \"quote\": \"If you did not authorise it, report it as fraud instead.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 743,
+  "output_tokens": 182,
+  "model_seconds": 1.47
+}

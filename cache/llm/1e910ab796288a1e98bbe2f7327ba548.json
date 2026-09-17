@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [],\n  \"confidence\": \"high\",\n  \"handoff_reason\": \"This involves a specific account situation and circumstances that require personalized assistance beyond general refund policy, so it should be handled by the support team.\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 647,
+  "output_tokens": 80,
+  "model_seconds": 1.69
+}

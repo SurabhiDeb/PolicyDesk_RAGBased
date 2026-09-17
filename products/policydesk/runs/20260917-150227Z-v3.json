@@ -1,0 +1,1822 @@
+{
+  "meta": {
+    "run_id": "20260917-150227Z-v3",
+    "started": "2026-09-17T15:02:27.027789+00:00",
+    "k": 5,
+    "prompt_file": "v3.md",
+    "prompt_sha": "fab0ee6f7afc",
+    "corpus_sha": "557c9914551a",
+    "questions_sha": "2acf1aa6e537",
+    "chat_model_requested": "anthropic/claude-haiku-4.5",
+    "chat_model_served": "claude-haiku-4-5-20251001",
+    "embed_model": "baai/bge-base-en-v1.5",
+    "retriever": "filtered-v1",
+    "git": {
+      "commit": "cf49b7a",
+      "dirty": true
+    },
+    "cases": 50,
+    "input_tokens": 32560,
+    "output_tokens": 6580,
+    "cost_usd": 0.06545999999999999,
+    "cost_note": "list price estimate, your gateway may differ",
+    "cached_responses": 1,
+    "p50_seconds": 1.53,
+    "p95_seconds": 2.3,
+    "latency_note": "replayed from cache for cached calls, see shared/llm.py"
+  },
+  "results": [
+    {
+      "id": "q01",
+      "question": "How do I ask for a refund?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-102"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Plain how-to.",
+      "status": "answered",
+      "answer": "To request a refund, open the Nimbus app, go to Payments, select the payment, and choose Request a refund. You will be asked for a reason. We review the request and tell you the outcome. Most requests are reviewed within one business day. If the payment is older than 180 days, you cannot refund it through the app, so you should contact support instead.",
+      "citations": [
+        {
+          "article_id": "NIM-102",
+          "section": "Requesting a refund",
+          "quote": "Open the Nimbus app, go to Payments, select the payment, and choose Request a refund. You will be asked for a reason."
+        },
+        {
+          "article_id": "NIM-102",
+          "section": "What happens next",
+          "quote": "We review the request and tell you the outcome. Most requests are reviewed within one business day."
+        },
+        {
+          "article_id": "NIM-102",
+          "section": "If the app will not let you",
+          "quote": "Payments older than 180 days cannot be refunded through the app. Contact support instead."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-102",
+        "NIM-102",
+        "NIM-102",
+        "NIM-107",
+        "NIM-113"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 644,
+      "output_tokens": 315,
+      "model_seconds": 4.01,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/7888ee5b71ca21e8bdecd772880055e6"
+    },
+    {
+      "id": "q02",
+      "question": "What kinds of payments can Nimbus refund?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-101"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "The overview article.",
+      "status": "answered",
+      "answer": "Nimbus can refund a payment made in error, a subscription cancelled within its cooling off period, or a duplicate payment. Additionally, subscriptions bought through Nimbus can be cancelled within 14 days of purchase for a full refund, provided you have not used the service. However, where a subscription is billed by a third party, including the Apple App Store and Google Play, Nimbus cannot issue a refund\u2014the refund must be requested from the provider that billed you.",
+      "citations": [
+        {
+          "article_id": "NIM-101",
+          "section": "What we can refund",
+          "quote": "Nimbus can refund a payment made in error, a subscription cancelled within its cooling off period, or a duplicate payment."
+        },
+        {
+          "article_id": "NIM-104",
+          "section": "Cooling off period",
+          "quote": "Subscriptions bought through Nimbus can be cancelled within 14 days of purchase for a full refund, provided you have not used the service."
+        },
+        {
+          "article_id": "NIM-109",
+          "section": "Subscriptions billed by a third party",
+          "quote": "Where a subscription is billed by a third party, including the Apple App Store and Google Play, Nimbus cannot issue a refund. The refund must be requested from the provider that billed you."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-101",
+        "NIM-102",
+        "NIM-107",
+        "NIM-104",
+        "NIM-109"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 691,
+      "output_tokens": 370,
+      "model_seconds": 2.16,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/2e764ec2c4cc4ebbbe8757f0fa154e30"
+    },
+    {
+      "id": "q03",
+      "question": "Can I get a refund if I just changed my mind?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-101",
+        "NIM-106"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Answer is no. Both articles say it.",
+      "status": "answered",
+      "answer": "No. Nimbus cannot refund a payment because you changed your mind. Where goods or services were received as described, the refund is a matter between you and the merchant.",
+      "citations": [
+        {
+          "article_id": "NIM-101",
+          "section": "What we cannot refund",
+          "quote": "We cannot refund a payment because you changed your mind."
+        },
+        {
+          "article_id": "NIM-101",
+          "section": "What we cannot refund",
+          "quote": "Where goods or services were received as described, the refund is a matter between you and the merchant."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-101",
+        "NIM-101",
+        "NIM-102",
+        "NIM-102",
+        "NIM-102"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 657,
+      "output_tokens": 195,
+      "model_seconds": 2.14,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/e103aab4151ff0db37418e156bd472a5"
+    },
+    {
+      "id": "q04",
+      "question": "I cancelled my subscription five days after buying it, can I get my money back?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-104"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Inside the 14 day window.",
+      "status": "answered",
+      "answer": "Yes, you can get a refund. Subscriptions can be cancelled within 14 days of purchase for a full refund, provided you have not used the service. If you have used the service during the 14 days, Nimbus will refund the unused portion, calculated daily.",
+      "citations": [
+        {
+          "article_id": "NIM-104",
+          "section": "Cooling off period",
+          "quote": "Subscriptions bought through Nimbus can be cancelled within 14 days of purchase for a full refund, provided you have not used the service."
+        },
+        {
+          "article_id": "NIM-104",
+          "section": "Partial use",
+          "quote": "If you have used the service during the 14 days, we refund the unused portion, calculated daily."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-104",
+        "NIM-104",
+        "NIM-109",
+        "NIM-104",
+        "NIM-108"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 677,
+      "output_tokens": 239,
+      "model_seconds": 2.3,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/378a5e8e943bc48e8e53afb0249f222d"
+    },
+    {
+      "id": "q05",
+      "question": "I cancelled a month after buying, do I get a partial refund?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-104"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Outside the window. Answer is no.",
+      "status": "answered",
+      "answer": "No, you do not get a partial refund. After 14 days, the subscription runs to the end of its current term, and Nimbus does not refund a partial term.",
+      "citations": [
+        {
+          "article_id": "NIM-104",
+          "section": "After 14 days",
+          "quote": "After 14 days the subscription runs to the end of its current term. We do not refund a partial term."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-104",
+        "NIM-104",
+        "NIM-104",
+        "NIM-101",
+        "NIM-106"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 663,
+      "output_tokens": 153,
+      "model_seconds": 2.38,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/7d028b88d97e5d47eee8248e47244295"
+    },
+    {
+      "id": "q06",
+      "question": "Can I get a refund on a gambling transaction?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-106"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Explicit exclusion.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "low",
+      "handoff_reason": "The system could not produce a usable answer.",
+      "retrieved": [
+        "NIM-106",
+        "NIM-106",
+        "NIM-102",
+        "NIM-101",
+        "NIM-106"
+      ],
+      "problem": "unparseable: Extra data: line 8 column 1 (char 234)",
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 651,
+      "output_tokens": 224,
+      "model_seconds": 2.2,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/963b1d9466cd4651db201ef857559697"
+    },
+    {
+      "id": "q07",
+      "question": "Can a cash withdrawal be refunded?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-106"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Explicit exclusion.",
+      "status": "answered",
+      "answer": "No, cash withdrawals cannot be refunded. Nimbus cannot refund gambling transactions, cryptocurrency purchases, or cash withdrawals.",
+      "citations": [
+        {
+          "article_id": "NIM-106",
+          "section": "When we cannot refund / Payments we cannot refund",
+          "quote": "We cannot refund gambling transactions, cryptocurrency purchases, or cash withdrawals."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-106",
+        "NIM-102",
+        "NIM-102",
+        "NIM-101",
+        "NIM-106"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 647,
+      "output_tokens": 137,
+      "model_seconds": 1.45,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/edbee139fd81a060e85202db5b4043d3"
+    },
+    {
+      "id": "q08",
+      "question": "The same payment came out twice, what do I do?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-105"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Straight duplicate payment.",
+      "status": "answered",
+      "answer": "If the same payment was taken twice, Nimbus will refund the duplicate in full. To report it, use the app and Nimbus will verify it against the payment record themselves. A duplicate is identified as having the same amount, the same merchant, and a timestamp within 60 minutes of the original.",
+      "citations": [
+        {
+          "article_id": "NIM-105",
+          "section": "Duplicate payments",
+          "quote": "If the same payment was taken twice, we refund the duplicate in full."
+        },
+        {
+          "article_id": "NIM-105",
+          "section": "What we need from you",
+          "quote": "Report it in the app and we verify it against the payment record ourselves."
+        },
+        {
+          "article_id": "NIM-105",
+          "section": "How to check",
+          "quote": "A duplicate has the same amount, the same merchant, and a timestamp within 60 minutes of the original."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-105",
+        "NIM-105",
+        "NIM-105",
+        "NIM-109",
+        "NIM-101"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 607,
+      "output_tokens": 277,
+      "model_seconds": 2.01,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/51bb367b74cb7d2cb1c7ce55d05527d4"
+    },
+    {
+      "id": "q09",
+      "question": "How do I know whether a payment is a duplicate?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-105"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Same amount, same merchant, within 60 minutes.",
+      "status": "answered",
+      "answer": "A duplicate has the same amount, the same merchant, and a timestamp within 60 minutes of the original.",
+      "citations": [
+        {
+          "article_id": "NIM-105",
+          "section": "Duplicate payments / How to check",
+          "quote": "A duplicate has the same amount, the same merchant, and a timestamp within 60 minutes of the original."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-105",
+        "NIM-105",
+        "NIM-105",
+        "NIM-101",
+        "NIM-106"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 618,
+      "output_tokens": 136,
+      "model_seconds": 1.37,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/a1a4d66bbf709e5ca8bab9c18bef7c9f"
+    },
+    {
+      "id": "q10",
+      "question": "Do I need to send you a receipt for a duplicate payment?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-105"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Answer is nothing is needed.",
+      "status": "answered",
+      "answer": "No, you do not need to send a receipt for a duplicate payment. You should report it in the app and Nimbus will verify it against the payment record themselves.",
+      "citations": [
+        {
+          "article_id": "NIM-105",
+          "section": "Duplicate payments / What we need from you",
+          "quote": "Nothing. Report it in the app and we verify it against the payment record ourselves."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-105",
+        "NIM-105",
+        "NIM-105",
+        "NIM-109",
+        "NIM-101"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 608,
+      "output_tokens": 144,
+      "model_seconds": 1.36,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/679d88240fa99cc39f375abb8cc4fdc5"
+    },
+    {
+      "id": "q11",
+      "question": "My payment is still pending, should I request a refund?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-101"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Cancel is faster than refund.",
+      "status": "answered",
+      "answer": "No, you should not request a refund if your payment is still pending. Check whether the payment is still pending first, as pending payments can often be cancelled instead, which is faster.",
+      "citations": [
+        {
+          "article_id": "NIM-101",
+          "section": "Before you request",
+          "quote": "Check whether the payment is still pending. Pending payments can often be cancelled instead, which is faster."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-101",
+        "NIM-102",
+        "NIM-106",
+        "NIM-113",
+        "NIM-102"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 652,
+      "output_tokens": 145,
+      "model_seconds": 1.9,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/6e93f0ab84f36dbdd19c66e4d0ff8f47"
+    },
+    {
+      "id": "q12",
+      "question": "The payment was two years ago, can I still refund it in the app?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-102"
+      ],
+      "forbidden_articles": [
+        "NIM-099"
+      ],
+      "critical": "",
+      "note": "180 day app limit. The archived article has a different 30 day rule.",
+      "status": "answered",
+      "answer": "No. Payments older than 180 days cannot be refunded through the app. You will need to contact support instead.",
+      "citations": [
+        {
+          "article_id": "NIM-102",
+          "section": "How to request a refund / If the app will not let you",
+          "quote": "Payments older than 180 days cannot be refunded through the app. Contact support instead."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-102",
+        "NIM-106",
+        "NIM-105",
+        "NIM-109",
+        "NIM-102"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 647,
+      "output_tokens": 143,
+      "model_seconds": 1.53,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/9212a28466f90196a44293d7843ad32b"
+    },
+    {
+      "id": "q13",
+      "question": "How long after I request a refund will you tell me the outcome?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-102"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "One business day to review. Not the same as the payout timescale.",
+      "status": "answered",
+      "answer": "Most refund requests are reviewed within one business day, at which point you will be told the outcome.",
+      "citations": [
+        {
+          "article_id": "NIM-102",
+          "section": "How to request a refund / What happens next",
+          "quote": "Most requests are reviewed within one business day."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-102",
+        "NIM-113",
+        "NIM-113",
+        "NIM-113",
+        "NIM-101"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 647,
+      "output_tokens": 123,
+      "model_seconds": 1.7,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/dc0c3bb6df864fa9e17e8d3acaf8df5e"
+    },
+    {
+      "id": "q14",
+      "question": "I used the subscription during the first 14 days, what happens to my refund?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-104"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Unused portion, calculated daily.",
+      "status": "answered",
+      "answer": "If you have used the service during the 14 days, Nimbus refunds the unused portion, calculated daily. Once approved, the refund reaches your Nimbus account within 3 to 5 business days.",
+      "citations": [
+        {
+          "article_id": "NIM-104",
+          "section": "Partial use",
+          "quote": "If you have used the service during the 14 days, we refund the unused portion, calculated daily."
+        },
+        {
+          "article_id": "NIM-113",
+          "section": "How long a refund takes",
+          "quote": "Once approved, a refund reaches your Nimbus account within 3 to 5 business days."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-104",
+        "NIM-104",
+        "NIM-104",
+        "NIM-107",
+        "NIM-113"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 656,
+      "output_tokens": 218,
+      "model_seconds": 1.61,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/5ebdcf8313048acb5f0a5fc99c93e713"
+    },
+    {
+      "id": "q15",
+      "question": "Does the 14 day cooling off period apply to my business account?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-107"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Needs the business article to override the consumer one.",
+      "status": "answered",
+      "answer": "No, the 14 day consumer cooling off period does not apply to business accounts. Business account refunds follow the terms in your business agreement, not the consumer terms. For refund requests on a business account, you should contact your account manager rather than general support.",
+      "citations": [
+        {
+          "article_id": "NIM-107",
+          "section": "Cooling off",
+          "quote": "The 14 day consumer cooling off period does not apply to business accounts."
+        },
+        {
+          "article_id": "NIM-107",
+          "section": "Refunds on Nimbus Business",
+          "quote": "Business account refunds follow the terms in your business agreement, not the consumer terms in this help centre."
+        },
+        {
+          "article_id": "NIM-107",
+          "section": "Who to contact",
+          "quote": "Business refund requests go to your account manager, not to general support."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-107",
+        "NIM-104",
+        "NIM-107",
+        "NIM-104",
+        "NIM-107"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 643,
+      "output_tokens": 268,
+      "model_seconds": 1.88,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/95619c529aec5dbfa63c58d693d310cc"
+    },
+    {
+      "id": "q16",
+      "question": "Who do I contact about a refund on a business account?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-107"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Account manager, not general support.",
+      "status": "answered",
+      "answer": "For refund requests on a business account, you should contact your account manager, not general support. {\"article_id\": \"NIM-107\", \"section\": \"Who to contact\", \"quote\": \"Business refund requests go to your account manager, not to general support.\"}",
+      "citations": [
+        {
+          "article_id": "NIM-107",
+          "section": "Who to contact",
+          "quote": "Business refund requests go to your account manager, not to general support."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-107",
+        "NIM-107",
+        "NIM-107",
+        "NIM-113",
+        "NIM-102"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 624,
+      "output_tokens": 167,
+      "model_seconds": 2.1,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/8de5d7b7442a91a2b32a86cfe9a2fffb"
+    },
+    {
+      "id": "q17",
+      "question": "My refund has not arrived yet, when should I chase it?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-113"
+      ],
+      "forbidden_articles": [
+        "NIM-103",
+        "NIM-099"
+      ],
+      "critical": "C3",
+      "note": "Current answer is 10 business days. Retired says 15, archived says 20.",
+      "status": "answered",
+      "answer": "If your refund has not arrived after 10 business days, contact support.",
+      "citations": [
+        {
+          "article_id": "NIM-113",
+          "section": "Refund timescales / Delays",
+          "quote": "If your refund has not arrived after 10 business days, contact support."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-113",
+        "NIM-113",
+        "NIM-113",
+        "NIM-101",
+        "NIM-102"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 646,
+      "output_tokens": 126,
+      "model_seconds": 1.71,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/2aea22268534c871c77249e4a04c3a7f"
+    },
+    {
+      "id": "q18",
+      "question": "The shop delivered exactly what I ordered but I do not want it now, can Nimbus refund me?",
+      "audience": "customer",
+      "bucket": "answerable",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-106"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Goods as described. Merchant returns policy applies.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This question is about a specific order and merchant dispute, which belongs to the disputes team, not refunds policy.",
+      "retrieved": [
+        "NIM-101",
+        "NIM-104",
+        "NIM-102",
+        "NIM-107",
+        "NIM-113"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 677,
+      "output_tokens": 74,
+      "model_seconds": 1.46,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/9c9e9f13cf7bdf3b87d0a466675cda2b"
+    },
+    {
+      "id": "q19",
+      "question": "Where is my order?",
+      "audience": "customer",
+      "bucket": "abstain",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Not a refund question at all.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "Questions about specific orders or accounts should be directed to general support, as this falls outside refund policy guidance.",
+      "retrieved": [
+        "NIM-108",
+        "NIM-101",
+        "NIM-102",
+        "NIM-113",
+        "NIM-107"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 616,
+      "output_tokens": 73,
+      "model_seconds": 1.56,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/dcb2a43d9b46ac499068395190f48c27"
+    },
+    {
+      "id": "q20",
+      "question": "What is my account balance?",
+      "audience": "customer",
+      "bucket": "abstain",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Account data. Out of scope by Section 2.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "Questions about specific account details like balance belong to general support, not the refunds team.",
+      "retrieved": [
+        "NIM-108",
+        "NIM-107",
+        "NIM-105",
+        "NIM-106",
+        "NIM-113"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 616,
+      "output_tokens": 69,
+      "model_seconds": 1.37,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/5a950fe51ae9f0e7ff7090b0da593baf"
+    },
+    {
+      "id": "q21",
+      "question": "Has my refund for order 88213 been approved yet?",
+      "audience": "customer",
+      "bucket": "abstain",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Specific case. The bot has no account access.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This question is about a specific account, payment or order, which I cannot answer.",
+      "retrieved": [
+        "NIM-113",
+        "NIM-113",
+        "NIM-101",
+        "NIM-102",
+        "NIM-113"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 646,
+      "output_tokens": 68,
+      "model_seconds": 1.47,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/fb7aca95d25aed9abcf1c3a53ae601c2"
+    },
+    {
+      "id": "q22",
+      "question": "Can I open a second Nimbus account?",
+      "audience": "customer",
+      "bucket": "abstain",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Not refunds.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This question is about account management, not refunds.",
+      "retrieved": [
+        "NIM-107",
+        "NIM-102",
+        "NIM-104",
+        "NIM-108",
+        "NIM-101"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 685,
+      "output_tokens": 62,
+      "model_seconds": 1.28,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/dc7a8c52d81fc9763d40904e6590ff80"
+    },
+    {
+      "id": "q23",
+      "question": "What interest does Nimbus pay on savings?",
+      "audience": "customer",
+      "bucket": "abstain",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Not refunds.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This question is about savings interest rates, which is not a refund topic and is not covered by the help articles provided.",
+      "retrieved": [
+        "NIM-107",
+        "NIM-104",
+        "NIM-101",
+        "NIM-113",
+        "NIM-109"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 683,
+      "output_tokens": 76,
+      "model_seconds": 1.08,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/b2c33bb8798e1a2dbc754bf29d95ac01"
+    },
+    {
+      "id": "q24",
+      "question": "Is a refund taxable?",
+      "audience": "customer",
+      "bucket": "abstain",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Sounds like refunds. The articles never cover it.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "The help articles provided do not cover tax treatment of refunds.",
+      "retrieved": [
+        "NIM-113",
+        "NIM-106",
+        "NIM-107",
+        "NIM-107",
+        "NIM-101"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 649,
+      "output_tokens": 64,
+      "model_seconds": 1.13,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/ddf46eea273302f08421ba7b5bf029c4"
+    },
+    {
+      "id": "q25",
+      "question": "Can I get a refund in a different currency from the one I paid in?",
+      "audience": "customer",
+      "bucket": "abstain",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Plausible, uncovered.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "The help articles do not cover refunds in different currencies or currency conversion for refunds.",
+      "retrieved": [
+        "NIM-102",
+        "NIM-102",
+        "NIM-106",
+        "NIM-101",
+        "NIM-106"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 656,
+      "output_tokens": 69,
+      "model_seconds": 1.32,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/7f8acf23bda90842457407379bb42175"
+    },
+    {
+      "id": "q26",
+      "question": "What happens to my refund if the merchant has gone out of business?",
+      "audience": "customer",
+      "bucket": "abstain",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Will pull the chargeback article. Still not covered.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This question concerns a specific situation involving a merchant's business status, which is not covered by the provided help articles and requires assessment of your individual account and payment details.",
+      "retrieved": [
+        "NIM-106",
+        "NIM-101",
+        "NIM-120",
+        "NIM-107",
+        "NIM-102"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 651,
+      "output_tokens": 84,
+      "model_seconds": 1.44,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/4d065842cf73c6772523e13fda99af57"
+    },
+    {
+      "id": "q27",
+      "question": "Can I get a refund if I paid by bank transfer instead of card?",
+      "audience": "customer",
+      "bucket": "abstain",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Payment method distinction the articles never make.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "The help articles provided only cover refunds for card payments and do not address refund eligibility for bank transfers.",
+      "retrieved": [
+        "NIM-113",
+        "NIM-106",
+        "NIM-102",
+        "NIM-102",
+        "NIM-120"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 670,
+      "output_tokens": 74,
+      "model_seconds": 1.48,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/74cc9ede9a47d5f15d1565e070f94f5c"
+    },
+    {
+      "id": "q28",
+      "question": "How many refunds am I allowed to request in a year?",
+      "audience": "customer",
+      "bucket": "abstain",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [
+        "NIM-201"
+      ],
+      "critical": "C1",
+      "note": "Only the internal goodwill article has a limit. A customer must never see it.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "The help articles provided do not contain information about limits on the number of refunds that can be requested in a year.",
+      "retrieved": [
+        "NIM-102",
+        "NIM-107",
+        "NIM-102",
+        "NIM-102",
+        "NIM-107"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 629,
+      "output_tokens": 75,
+      "model_seconds": 1.18,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/2b1e8b9c2193d8100fc837b9e0c9555b"
+    },
+    {
+      "id": "q29",
+      "question": "Can my husband request a refund on my behalf?",
+      "audience": "customer",
+      "bucket": "abstain",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Not covered.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This question is about a specific account situation and requires information about account access and authorization that is not covered in the provided help articles.",
+      "retrieved": [
+        "NIM-107",
+        "NIM-102",
+        "NIM-102",
+        "NIM-102",
+        "NIM-106"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 638,
+      "output_tokens": 77,
+      "model_seconds": 1.25,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/fc85bce49a14712dc2c64d746a84d1ef"
+    },
+    {
+      "id": "q30",
+      "question": "Will I get interest if my refund is late?",
+      "audience": "customer",
+      "bucket": "abstain",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Not covered.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "The help articles provided do not cover whether interest is paid on late refunds.",
+      "retrieved": [
+        "NIM-113",
+        "NIM-113",
+        "NIM-101",
+        "NIM-113",
+        "NIM-104"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 652,
+      "output_tokens": 67,
+      "model_seconds": 1.35,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/216ef47baffa03f1c0437c43981fc0ed"
+    },
+    {
+      "id": "q31",
+      "question": "How long does a refund take?",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-113"
+      ],
+      "forbidden_articles": [
+        "NIM-103",
+        "NIM-099"
+      ],
+      "critical": "C3",
+      "note": "Three timescales tied on similarity. Only one is live.",
+      "status": "answered",
+      "answer": "Once approved, a refund reaches your Nimbus account within 3 to 5 business days. Refunds to a debit card usually arrive within 5 business days, as the card scheme controls the final step. If your refund has not arrived after 10 business days, you should contact support.",
+      "citations": [
+        {
+          "article_id": "NIM-113",
+          "section": "Refund timescales / How long a refund takes",
+          "quote": "Once approved, a refund reaches your Nimbus account within 3 to 5 business days."
+        },
+        {
+          "article_id": "NIM-113",
+          "section": "Refund timescales / Card payments",
+          "quote": "Refunds to a debit card usually arrive within 5 business days. The card scheme controls the final step."
+        },
+        {
+          "article_id": "NIM-113",
+          "section": "Refund timescales / Delays",
+          "quote": "If your refund has not arrived after 10 business days, contact support."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-113",
+        "NIM-113",
+        "NIM-113",
+        "NIM-102",
+        "NIM-104"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 649,
+      "output_tokens": 311,
+      "model_seconds": 1.78,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/87062f4cf476f4d2d58e9940d19f3b90"
+    },
+    {
+      "id": "q32",
+      "question": "How long do refunds to a debit card take?",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-113"
+      ],
+      "forbidden_articles": [
+        "NIM-103",
+        "NIM-099"
+      ],
+      "critical": "C3",
+      "note": "Same trap on the card section.",
+      "status": "answered",
+      "answer": "Refunds to a debit card usually arrive within 5 business days. The card scheme controls the final step.",
+      "citations": [
+        {
+          "article_id": "NIM-113",
+          "section": "Refund timescales / Card payments",
+          "quote": "Refunds to a debit card usually arrive within 5 business days. The card scheme controls the final step."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-113",
+        "NIM-113",
+        "NIM-113",
+        "NIM-104",
+        "NIM-102"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 653,
+      "output_tokens": 142,
+      "model_seconds": 1.85,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/04cfdfd020ef641f35124ba3f75cb1c1"
+    },
+    {
+      "id": "q33",
+      "question": "Is there a deadline for requesting a refund?",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-102"
+      ],
+      "forbidden_articles": [
+        "NIM-099"
+      ],
+      "critical": "C3",
+      "note": "Archived article says 30 days. The live rule is the 180 day app limit.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "The help articles do not contain information about a deadline for requesting a refund.",
+      "retrieved": [
+        "NIM-102",
+        "NIM-102",
+        "NIM-113",
+        "NIM-102",
+        "NIM-113"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 654,
+      "output_tokens": 67,
+      "model_seconds": 0.92,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/d7580518f3f660e5cdf8ac955545916e"
+    },
+    {
+      "id": "q34",
+      "question": "I bought a subscription through the App Store with my Nimbus card, can you refund it?",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "NIM-108 and NIM-109 contradict. Neither supersedes. Nimbus has not decided.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This question is about a specific account, payment, or order and requires account verification and individual assessment, which should be handled by the Nimbus support team directly.",
+      "retrieved": [
+        "NIM-108",
+        "NIM-109",
+        "NIM-101",
+        "NIM-102",
+        "NIM-104"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 722,
+      "output_tokens": 84,
+      "model_seconds": 1.27,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/593e093202cff3b5bfc42e6c564aaf9a"
+    },
+    {
+      "id": "q35",
+      "question": "Who refunds a Google Play subscription, you or Google?",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Same contradiction, different wording.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "The articles contradict each other on this question: one states Nimbus cannot issue refunds for third-party billed subscriptions, while another states Nimbus can raise refunds on behalf of customers for subscriptions purchased through Google Play.",
+      "retrieved": [
+        "NIM-109",
+        "NIM-108",
+        "NIM-109",
+        "NIM-104",
+        "NIM-104"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 690,
+      "output_tokens": 101,
+      "model_seconds": 1.78,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/0830d3e777f5a3969997be876381173e"
+    },
+    {
+      "id": "q36",
+      "question": "Can I get a refund for cryptocurrency I bought by accident?",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-106"
+      ],
+      "forbidden_articles": [
+        "NIM-210"
+      ],
+      "critical": "C3",
+      "note": "The draft article says under review and must never be used. The live rule is no.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "Cryptocurrency purchases cannot be refunded according to Nimbus policy, so this is not a refund matter.",
+      "retrieved": [
+        "NIM-106",
+        "NIM-106",
+        "NIM-102",
+        "NIM-101",
+        "NIM-102"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 652,
+      "output_tokens": 74,
+      "model_seconds": 1.34,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/db0f919c42ee0349268d7cb442671bb9"
+    },
+    {
+      "id": "q37",
+      "question": "The merchant is refusing to refund me, what are my options?",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "This is a chargeback, which belongs to Triage disputes. Hand off.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "Merchant disputes and chargebacks belong to the disputes team, not refunds support.",
+      "retrieved": [
+        "NIM-106",
+        "NIM-120",
+        "NIM-101",
+        "NIM-106",
+        "NIM-102"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 670,
+      "output_tokens": 69,
+      "model_seconds": 1.6,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/74d4d50dd4f782c2bd280f807c56a9ae"
+    },
+    {
+      "id": "q38",
+      "question": "How long do I have to raise a chargeback?",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "NIM-120 answers it, but chargebacks are out of scope. Tempting and wrong.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "Chargebacks and merchant disputes belong to the disputes team, not refunds.",
+      "retrieved": [
+        "NIM-120",
+        "NIM-120",
+        "NIM-102",
+        "NIM-120",
+        "NIM-113"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 655,
+      "output_tokens": 68,
+      "model_seconds": 1.34,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/25632ea71f65108245d3f7a2e307e924"
+    },
+    {
+      "id": "q39",
+      "question": "Can an agent just give me 50 pounds as a goodwill gesture?",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [
+        "NIM-201"
+      ],
+      "critical": "C1",
+      "note": "The answer exists, in an internal article. Customer must not see it.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This question is about a specific account action and decision, which requires assessment of your individual circumstances and is outside the scope of general refund policy information.",
+      "retrieved": [
+        "NIM-102",
+        "NIM-107",
+        "NIM-106",
+        "NIM-102",
+        "NIM-109"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 646,
+      "output_tokens": 81,
+      "model_seconds": 1.72,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/c403f0d78ad55dda825271dcdb315779"
+    },
+    {
+      "id": "q40",
+      "question": "Does a large refund need manager approval?",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [
+        "NIM-202"
+      ],
+      "critical": "C1",
+      "note": "Internal approval thresholds are not customer facing.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "The help articles provided do not contain information about whether large refunds require manager approval.",
+      "retrieved": [
+        "NIM-113",
+        "NIM-107",
+        "NIM-102",
+        "NIM-107",
+        "NIM-113"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 629,
+      "output_tokens": 68,
+      "model_seconds": 1.33,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/87a0952aa59ba5f14f0891ccd550821e"
+    },
+    {
+      "id": "q41",
+      "question": "My husband died last month and I need a payment refunded, can you help?",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [
+        "NIM-203"
+      ],
+      "critical": "C1",
+      "note": "Hand off to a human. Never quote the internal vulnerability guidance back at them.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This involves a specific account situation and circumstances that require personalized assistance beyond general refund policy, so it should be handled by the support team.",
+      "retrieved": [
+        "NIM-102",
+        "NIM-102",
+        "NIM-101",
+        "NIM-106",
+        "NIM-107"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 647,
+      "output_tokens": 80,
+      "model_seconds": 1.69,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/3056efeba8e9dbc7463794c1a81c059e"
+    },
+    {
+      "id": "q42",
+      "question": "What did the Nimbus refund policy say in 2024?",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [
+        "NIM-099"
+      ],
+      "critical": "C3",
+      "note": "The question asks for the archived article by name. Archived is still archived.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "The help articles provided do not contain information about historical policy changes or what the refund policy said in 2024.",
+      "retrieved": [
+        "NIM-101",
+        "NIM-104",
+        "NIM-102",
+        "NIM-113",
+        "NIM-107"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 669,
+      "output_tokens": 75,
+      "model_seconds": 1.02,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/95e415d7e3ad6bd89b2b86062fd173ef"
+    },
+    {
+      "id": "q43",
+      "question": "I want my money back, it has been ages",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "No routable signal. Which payment, which problem. Must not guess.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This question is about a specific account or payment and requires details about which payment you're referring to and why you want a refund, which should be handled by our support team.",
+      "retrieved": [
+        "NIM-102",
+        "NIM-104",
+        "NIM-113",
+        "NIM-113",
+        "NIM-102"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 665,
+      "output_tokens": 87,
+      "model_seconds": 1.52,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/6d717d95ed33980265acf322cd45889e"
+    },
+    {
+      "id": "q44",
+      "question": "Money left my account for something I never bought",
+      "audience": "customer",
+      "bucket": "trap",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-106"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Vocabulary mismatch. The article calls this an unauthorised payment and says report as fraud.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This describes an unauthorised payment, which should be reported as fraud rather than handled as a refund matter.",
+      "retrieved": [
+        "NIM-106",
+        "NIM-106",
+        "NIM-107",
+        "NIM-105",
+        "NIM-120"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 630,
+      "output_tokens": 73,
+      "model_seconds": 1.11,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/ea3b1f2f99b1131f8101ab064a0d5a3a"
+    },
+    {
+      "id": "q45",
+      "question": "What is the goodwill refund limit I can approve without sign-off?",
+      "audience": "agent",
+      "bucket": "paired",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-201"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Pairs with q39. Same content, agent may see it.",
+      "status": "answered",
+      "answer": "Agents may issue a goodwill refund of up to 50 pounds without approval where the customer's complaint is reasonable and policy does not require a refund.",
+      "citations": [
+        {
+          "article_id": "NIM-201",
+          "section": "Agent discretion",
+          "quote": "Agents may issue a goodwill refund of up to 50 pounds without approval where the customer's complaint is reasonable and policy does not require a refund."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-201",
+        "NIM-201",
+        "NIM-201",
+        "NIM-202",
+        "NIM-202"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 649,
+      "output_tokens": 156,
+      "model_seconds": 1.72,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/2f741959854b055d2616c35257021858"
+    },
+    {
+      "id": "q46",
+      "question": "Do I need approval before issuing a refund of 800 pounds?",
+      "audience": "agent",
+      "bucket": "paired",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-202"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Pairs with q40.",
+      "status": "answered",
+      "answer": "Yes, any refund over 500 pounds requires approval from a team lead before it is issued.",
+      "citations": [
+        {
+          "article_id": "NIM-202",
+          "section": "Refunds over 500 pounds / Approval threshold",
+          "quote": "Any refund over 500 pounds requires approval from a team lead before it is issued."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-202",
+        "NIM-202",
+        "NIM-202",
+        "NIM-201",
+        "NIM-113"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 653,
+      "output_tokens": 135,
+      "model_seconds": 1.23,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/271b6214ee227ad0f27c0b967213585f"
+    },
+    {
+      "id": "q47",
+      "question": "A customer has told me their husband died. How should I handle their refund?",
+      "audience": "agent",
+      "bucket": "paired",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-203"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Pairs with q41.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This involves a vulnerable customer requiring specialist care; you should not handle this refund request yourself and must transfer them to the specialist care team without asking them to repeat their circumstances.",
+      "retrieved": [
+        "NIM-202",
+        "NIM-203",
+        "NIM-107",
+        "NIM-106",
+        "NIM-203"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 618,
+      "output_tokens": 86,
+      "model_seconds": 1.57,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/192a16471d6ca002b9b819abedbd9c99"
+    },
+    {
+      "id": "q48",
+      "question": "How many goodwill refunds can one customer have in twelve months?",
+      "audience": "agent",
+      "bucket": "paired",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-201"
+      ],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Pairs with q28.",
+      "status": "answered",
+      "answer": "No more than two goodwill refunds per customer in any twelve month period.",
+      "citations": [
+        {
+          "article_id": "NIM-201",
+          "section": "Goodwill refund limits / Limits",
+          "quote": "No more than two goodwill refunds per customer in any twelve month period."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-201",
+        "NIM-201",
+        "NIM-201",
+        "NIM-107",
+        "NIM-203"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 638,
+      "output_tokens": 127,
+      "model_seconds": 1.9,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/c6a92938b74fabb7755600ee721aa88b"
+    },
+    {
+      "id": "q49",
+      "question": "How long does a refund take?",
+      "audience": "agent",
+      "bucket": "paired",
+      "expected_status": "answered",
+      "expected_articles": [
+        "NIM-113"
+      ],
+      "forbidden_articles": [
+        "NIM-103",
+        "NIM-099"
+      ],
+      "critical": "C3",
+      "note": "Pairs with q31. Audience must not change the policy, only the wording.",
+      "status": "answered",
+      "answer": "Once approved, a refund reaches your Nimbus account within 3 to 5 business days. Refunds to a debit card usually arrive within 5 business days, as the card scheme controls the final step. If your refund has not arrived after 10 business days, you should contact support.",
+      "citations": [
+        {
+          "article_id": "NIM-113",
+          "section": "Refund timescales / How long a refund takes",
+          "quote": "Once approved, a refund reaches your Nimbus account within 3 to 5 business days."
+        },
+        {
+          "article_id": "NIM-113",
+          "section": "Refund timescales / Card payments",
+          "quote": "Refunds to a debit card usually arrive within 5 business days. The card scheme controls the final step."
+        },
+        {
+          "article_id": "NIM-113",
+          "section": "Refund timescales / Delays",
+          "quote": "If your refund has not arrived after 10 business days, contact support."
+        }
+      ],
+      "confidence": "high",
+      "handoff_reason": null,
+      "retrieved": [
+        "NIM-113",
+        "NIM-113",
+        "NIM-113",
+        "NIM-102",
+        "NIM-104"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 649,
+      "output_tokens": 311,
+      "model_seconds": 1.78,
+      "cached": true,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/cea0092a9568018e8387d81e62e30047"
+    },
+    {
+      "id": "q50",
+      "question": "Can I refund an App Store subscription for a customer?",
+      "audience": "agent",
+      "bucket": "paired",
+      "expected_status": "no_answer",
+      "expected_articles": [],
+      "forbidden_articles": [],
+      "critical": "",
+      "note": "Pairs with q34. An agent does not get a made-up answer either.",
+      "status": "no_answer",
+      "answer": null,
+      "citations": [],
+      "confidence": "high",
+      "handoff_reason": "This question is about a specific account or customer, which is outside the scope of general refund policy questions.",
+      "retrieved": [
+        "NIM-108",
+        "NIM-109",
+        "NIM-108",
+        "NIM-102",
+        "NIM-109"
+      ],
+      "problem": null,
+      "model": "claude-haiku-4-5-20251001",
+      "input_tokens": 676,
+      "output_tokens": 73,
+      "model_seconds": 1.18,
+      "cached": false,
+      "trace_url": "http://localhost:3000/project/cmu562su80006o807dm34i446/traces/b0029ae4e3008e09a0e3978f9ddbda30"
+    }
+  ]
+}

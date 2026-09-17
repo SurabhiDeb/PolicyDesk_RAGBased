@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"No, gambling transactions cannot be refunded. {NIM-106, When we cannot refund / Payments we cannot refund, \\\"We cannot refund gambling transactions, cryptocurrency purchases, or cash withdrawals.\\\"}\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-106\",\n      \"section\": \"When we cannot refund / Payments we cannot refund\",\n      \"quote\": \"We cannot refund gambling transactions, cryptocurrency purchases, or cash withdrawals.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 764,
+  "output_tokens": 156,
+  "model_seconds": 2.51
+}

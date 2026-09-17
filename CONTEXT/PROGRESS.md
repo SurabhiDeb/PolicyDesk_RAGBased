@@ -9,13 +9,16 @@ Ready to start Product 2 (PolicyDesk, RAG).
 
 ## Next step
 
-Product 2, Beat 6. Four changes, one variable each, in this order.
-  v2  retrieval filter on visibility, status and supersedes
-  v3  prompt rules for scope, contradiction, abstention and citations
-  v4  hybrid retrieval plus a reranker, on LangChain
-  then Haiku against Sonnet as a matrix, with ragas as a second opinion
+Product 2, Beat 7. Service layer. FastAPI, API key auth, rate limiting,
+PII redaction in logs, health check, Docker.
 
-CI is deliberately red on C1 until v2 lands.
+## Product 2 current, prompt v4, retriever filtered-v1, Haiku 4.5
+  recall@5 100%, recall@1 96.4%, MRR 0.98
+  abstention recall 86.4% (target 95%), precision 95.0%
+  banned cited 0, C1 leaks 0, unparseable none
+  groundedness unmeasured on v4, last known 75% on v2
+  three known failures: q34, q35 contradiction, q37 scope
+  notes in runs/v1-notes.md, v2-notes.md, v4-notes.md
 
 ## Product 2 baseline, prompt v1, Haiku 4.5, 50 cases
   recall@5   96.4%, recall@1 71.4%, MRR 0.84

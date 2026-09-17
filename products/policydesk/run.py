@@ -21,7 +21,7 @@ HERE = Path(__file__).parent
 QUESTIONS = HERE / "data" / "questions.jsonl"
 ARTICLES = HERE / "data" / "articles.jsonl"
 RUNS = HERE / "runs"
-RUN_LABEL = "v2"  # bump whenever the prompt or the retriever changes
+RUN_LABEL = "v4"  # bump whenever the prompt or the retriever changes
 
 # List prices per million tokens. If the model id is not here we say so
 # rather than quietly reporting zero.

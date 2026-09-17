@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Refunds to a debit card usually arrive within 5 business days. The card scheme controls the final step.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"Refund timescales / Card payments\",\n      \"quote\": \"Refunds to a debit card usually arrive within 5 business days. The card scheme controls the final step.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 653,
+  "output_tokens": 142,
+  "model_seconds": 1.85
+}

@@ -3,7 +3,18 @@
 Everything here is a function of its arguments and nothing else, which is
 exactly what makes it testable in milliseconds.
 """
+import json
 
+
+def first_json(text: str) -> dict:
+    """Parse the first JSON object and ignore anything after it.
+
+    Models told to return only JSON sometimes return JSON and then keep
+    talking. raw_decode reads one value and reports where it stopped.
+    """
+    decoder = json.JSONDecoder()
+    value, _end = decoder.raw_decode(strip_fences(text))
+    return value
 
 def split_sections(article: dict) -> list[dict]:
     """One chunk per '## ' heading. Text before the first heading is dropped."""

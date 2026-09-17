@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"For refund requests on a business account, you should contact your account manager, not general support. {\\\"article_id\\\": \\\"NIM-107\\\", \\\"section\\\": \\\"Who to contact\\\", \\\"quote\\\": \\\"Business refund requests go to your account manager, not to general support.\\\"}\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-107\",\n      \"section\": \"Who to contact\",\n      \"quote\": \"Business refund requests go to your account manager, not to general support.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 624,
+  "output_tokens": 167,
+  "model_seconds": 2.1
+}

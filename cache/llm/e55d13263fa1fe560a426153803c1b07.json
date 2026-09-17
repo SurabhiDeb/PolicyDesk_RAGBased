@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Nimbus can refund a payment made in error, a subscription cancelled within its cooling off period, or a duplicate payment. Additionally, subscriptions bought through Nimbus can be cancelled within 14 days of purchase for a full refund, provided you have not used the service. However, where a subscription is billed by a third party, including the Apple App Store and Google Play, Nimbus cannot issue a refund\u2014the refund must be requested from the provider that billed you.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-101\",\n      \"section\": \"What we can refund\",\n      \"quote\": \"Nimbus can refund a payment made in error, a subscription cancelled within its cooling off period, or a duplicate payment.\"\n    },\n    {\n      \"article_id\": \"NIM-104\",\n      \"section\": \"Cooling off period\",\n      \"quote\": \"Subscriptions bought through Nimbus can be cancelled within 14 days of purchase for a full refund, provided you have not used the service.\"\n    },\n    {\n      \"article_id\": \"NIM-109\",\n      \"section\": \"Subscriptions billed by a third party\",\n      \"quote\": \"Where a subscription is billed by a third party, including the Apple App Store and Google Play, Nimbus cannot issue a refund. The refund must be requested from the provider that billed you.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 691,
+  "output_tokens": 370,
+  "model_seconds": 2.16
+}

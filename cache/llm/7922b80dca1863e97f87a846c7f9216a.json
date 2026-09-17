@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [],\n  \"confidence\": \"high\",\n  \"handoff_reason\": \"The articles contradict each other on this question: one states Nimbus cannot issue refunds for third-party billed subscriptions, while another states Nimbus can raise refunds on behalf of customers for subscriptions purchased through Google Play.\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 690,
+  "output_tokens": 101,
+  "model_seconds": 1.78
+}

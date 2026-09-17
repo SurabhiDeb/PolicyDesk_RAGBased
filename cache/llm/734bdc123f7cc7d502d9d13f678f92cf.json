@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [],\n  \"confidence\": \"high\",\n  \"handoff_reason\": \"This involves a vulnerable customer requiring specialist care; you should not handle this refund request yourself and must transfer them to the specialist care team without asking them to repeat their circumstances.\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 618,
+  "output_tokens": 86,
+  "model_seconds": 1.57
+}

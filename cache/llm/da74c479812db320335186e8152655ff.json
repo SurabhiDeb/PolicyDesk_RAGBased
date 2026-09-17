@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"No. Nimbus cannot refund a payment because you changed your mind. Where goods or services were received as described, the refund is a matter between you and the merchant.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-101\",\n      \"section\": \"What we cannot refund\",\n      \"quote\": \"We cannot refund a payment because you changed your mind.\"\n    },\n    {\n      \"article_id\": \"NIM-101\",\n      \"section\": \"What we cannot refund\",\n      \"quote\": \"Where goods or services were received as described, the refund is a matter between you and the merchant.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 657,
+  "output_tokens": 195,
+  "model_seconds": 2.14
+}
