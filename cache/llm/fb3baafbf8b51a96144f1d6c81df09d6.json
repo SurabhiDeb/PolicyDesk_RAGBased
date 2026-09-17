@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"If your refund has not arrived after 10 business days, contact support. Once approved, a refund reaches your Nimbus account within 3 to 5 business days. To request a refund, open the Nimbus app, go to Payments, select the payment, and choose Request a refund. However, if the payment is older than 180 days, you cannot refund it through the app and must contact support instead.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"How long a refund takes\",\n      \"quote\": \"Once approved, a refund reaches your Nimbus account within 3 to 5 business days.\"\n    },\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"Delays\",\n      \"quote\": \"If your refund has not arrived after 10 business days, contact support.\"\n    },\n    {\n      \"article_id\": \"NIM-102\",\n      \"section\": \"Requesting a refund\",\n      \"quote\": \"Open the Nimbus app, go to Payments, select the payment, and choose Request a refund.\"\n    },\n    {\n      \"article_id\": \"NIM-102\",\n      \"section\": \"If the app will not let you\",\n      \"quote\": \"Payments older than 180 days cannot be refunded through the app. Contact support instead.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 401,
+  "output_tokens": 369,
+  "model_seconds": 2.25
+}

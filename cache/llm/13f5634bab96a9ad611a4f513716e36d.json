@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [],\n  \"confidence\": \"high\",\n  \"handoff_reason\": \"I cannot check the status of individual orders or refunds; you need to contact Nimbus support directly to find out if your specific refund has been approved.\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 382,
+  "output_tokens": 84,
+  "model_seconds": 1.65
+}

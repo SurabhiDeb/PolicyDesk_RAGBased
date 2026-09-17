@@ -1,0 +1,8 @@
+{
+  "text": "{\"grounded\": false, \"unsupported\": [\"If goods or services were received as described, the refund is a matter between you and the merchant.\"]}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 388,
+  "output_tokens": 133,
+  "model_seconds": 6.45
+}

@@ -14,13 +14,14 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from shared.embed import EMBED_MODEL  # noqa: E402
 from shared.tracing import flush  # noqa: E402
-
+from retrieve import RETRIEVER  # noqa: E402
 from ask import MODEL, PROMPT, answer  # noqa: E402
 
 HERE = Path(__file__).parent
 QUESTIONS = HERE / "data" / "questions.jsonl"
 ARTICLES = HERE / "data" / "articles.jsonl"
 RUNS = HERE / "runs"
+RUN_LABEL = "v2"  # bump whenever the prompt or the retriever changes
 
 # List prices per million tokens. If the model id is not here we say so
 # rather than quietly reporting zero.
@@ -62,7 +63,7 @@ def main():
         json.loads(line) for line in QUESTIONS.read_text().splitlines() if line.strip()
     ]
     started = datetime.now(timezone.utc)
-    run_id = started.strftime("%Y%m%d-%H%M%SZ") + "-v1"
+    run_id = started.strftime("%Y%m%d-%H%M%SZ") + f"-{RUN_LABEL}"
 
     results = []
     for i, q in enumerate(questions, start=1):
@@ -96,6 +97,7 @@ def main():
             "chat_model_requested": MODEL,
             "chat_model_served": served,
             "embed_model": EMBED_MODEL,
+            "retriever": RETRIEVER,
             "git": git_state(),
             "cases": n,
             "input_tokens": input_tokens,

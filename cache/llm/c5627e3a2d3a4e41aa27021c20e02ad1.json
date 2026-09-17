@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"If you have used the service during the 14 days, we refund the unused portion, calculated daily.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-104\",\n      \"section\": \"Partial use\",\n      \"quote\": \"If you have used the service during the 14 days, we refund the unused portion, calculated daily.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 392,
+  "output_tokens": 132,
+  "model_seconds": 1.68
+}

@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"A chargeback must be raised within 120 days of the transaction.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-120\",\n      \"section\": \"Deadlines\",\n      \"quote\": \"A chargeback must be raised within 120 days of the transaction.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 391,
+  "output_tokens": 118,
+  "model_seconds": 1.41
+}

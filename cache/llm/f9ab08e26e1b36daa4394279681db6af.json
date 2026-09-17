@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"No more than two goodwill refunds per customer in any twelve month period.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-201\",\n      \"section\": \"Goodwill refund limits / Limits\",\n      \"quote\": \"No more than two goodwill refunds per customer in any twelve month period.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 374,
+  "output_tokens": 127,
+  "model_seconds": 1.07
+}

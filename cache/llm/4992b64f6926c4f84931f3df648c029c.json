@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [],\n  \"confidence\": \"high\",\n  \"handoff_reason\": \"The help articles provided cover refund timescales and processes but do not contain information about interest on late refunds.\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 388,
+  "output_tokens": 75,
+  "model_seconds": 1.12
+}

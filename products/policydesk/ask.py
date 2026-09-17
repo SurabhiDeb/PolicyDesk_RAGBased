@@ -53,7 +53,7 @@ def answer(
         ) as root:
 
             with observation("retrieve", "retriever", input=question) as span:
-                hits = search(question, k)
+                hits = search(question, k, audience)
                 span.update(
                     output=[
                         {f: h[f] for f in TRACED_HIT_FIELDS} for h in hits

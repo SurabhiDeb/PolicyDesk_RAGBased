@@ -20,7 +20,8 @@ ARTICLES = HERE / "data" / "articles.jsonl"
 
 @pytest.fixture(scope="session")
 def run():
-    files = sorted(RUNS.glob("*-v*.json"))
+    files = sorted(p for p in RUNS.glob("*-v*.json")
+                   if "groundedness" not in p.name)
     assert files, f"no run record in {RUNS}"
     return json.loads(files[-1].read_text())
 
@@ -70,26 +71,25 @@ def test_latency_within_budget(run):
     p95 = seconds[int(len(seconds) * 0.95) - 1]
     assert p95 < 6.0, f"p95 latency {p95}s over the 6s budget"
 
-
-# --- Known gaps. Expected to fail until the beat that fixes them. ---
-
-@pytest.mark.xfail(strict=True, reason="Beat 6, no visibility filter on retrieval")
 def test_no_banned_article_is_ever_cited(results):
+    """C3. Archived, draft or superseded content must never be quoted."""
     cited = exposure(results)["cited_cases"]
     assert cited == [], f"archived, draft or superseded cited in {cited}"
+
+def test_recall_at_1(results):
+    """The right article should usually be the top hit, not merely present."""
+    gold = [r for r in results if r["expected_articles"]]
+    at_one = sum(1 for r in gold if first_gold_rank(r) == 1)
+    assert at_one / len(gold) >= 0.80, f"recall@1 {at_one / len(gold):.0%}"
+
+
+# --- Known gaps. Expected to fail until the beat that fixes them. ---
 
 
 @pytest.mark.xfail(strict=True, reason="Beat 6, prompt has no scope or contradiction rules")
 def test_abstention_recall(results):
     a = abstention(results)
     assert a["recall"] >= 0.95, f"abstention recall {a['recall']:.0%}"
-
-
-@pytest.mark.xfail(strict=True, reason="Beat 6, no reranker yet")
-def test_recall_at_1(results):
-    gold = [r for r in results if r["expected_articles"]]
-    at_one = sum(1 for r in gold if first_gold_rank(r) == 1)
-    assert at_one / len(gold) >= 0.80, f"recall@1 {at_one / len(gold):.0%}"
 
 
 @pytest.mark.xfail(strict=True, reason="Beat 6, q18 gold article never retrieved")

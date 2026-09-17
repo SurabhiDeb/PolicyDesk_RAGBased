@@ -68,7 +68,8 @@ def judge_one(answer: str, citations: list[dict]) -> dict:
 
 
 def main():
-    files = sorted(RUNS.glob("*-v*.json"))
+    files = sorted(p for p in RUNS.glob("*-v*.json")
+                   if "groundedness" not in p.name)
     if not files:
         sys.exit(f"No run record in {RUNS}")
 

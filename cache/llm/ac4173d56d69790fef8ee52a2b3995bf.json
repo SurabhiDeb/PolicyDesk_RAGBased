@@ -1,0 +1,8 @@
+{
+  "text": "{\n  \"grounded\": false,\n  \"unsupported\": [\n    \"You should contact the merchant about their returns policy first, as refunds are a matter between you and the merchant.\"\n  ]\n}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 401,
+  "output_tokens": 379,
+  "model_seconds": 8.23
+}

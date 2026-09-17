@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"No, you do not get a partial refund. After 14 days, the subscription runs to the end of its current term and we do not refund a partial term.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-104\",\n      \"section\": \"After 14 days\",\n      \"quote\": \"After 14 days the subscription runs to the end of its current term. We do not refund a partial term.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 399,
+  "output_tokens": 150,
+  "model_seconds": 1.42
+}

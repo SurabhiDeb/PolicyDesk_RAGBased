@@ -1,0 +1,282 @@
+{
+  "run_id": "20260917-142630Z-v2",
+  "judge_model": "anthropic/claude-sonnet-5",
+  "judge_prompt": "judge-v1.md",
+  "cases": 32,
+  "grounded": 24,
+  "verdicts": [
+    {
+      "id": "q01",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 439,
+      "output_tokens": 229
+    },
+    {
+      "id": "q02",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 312,
+      "output_tokens": 31
+    },
+    {
+      "id": "q03",
+      "grounded": false,
+      "unsupported": [
+        "If goods or services were received as described, the refund is a matter between you and the merchant."
+      ],
+      "cached": false,
+      "input_tokens": 388,
+      "output_tokens": 133
+    },
+    {
+      "id": "q04",
+      "grounded": false,
+      "unsupported": [
+        "If you have used the service during those 5 days, we will refund the unused portion, calculated daily."
+      ],
+      "cached": true,
+      "input_tokens": 390,
+      "output_tokens": 248
+    },
+    {
+      "id": "q05",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 303,
+      "output_tokens": 201
+    },
+    {
+      "id": "q06",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 284,
+      "output_tokens": 36
+    },
+    {
+      "id": "q07",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 288,
+      "output_tokens": 32
+    },
+    {
+      "id": "q08",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 335,
+      "output_tokens": 96
+    },
+    {
+      "id": "q09",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 300,
+      "output_tokens": 35
+    },
+    {
+      "id": "q10",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 305,
+      "output_tokens": 74
+    },
+    {
+      "id": "q11",
+      "grounded": false,
+      "unsupported": [
+        "No, you should not request a refund for a pending payment."
+      ],
+      "cached": false,
+      "input_tokens": 318,
+      "output_tokens": 375
+    },
+    {
+      "id": "q12",
+      "grounded": false,
+      "unsupported": [
+        "No, you cannot refund a payment that is two years old through the app."
+      ],
+      "cached": false,
+      "input_tokens": 309,
+      "output_tokens": 632
+    },
+    {
+      "id": "q13",
+      "grounded": false,
+      "unsupported": [
+        "Most refund requests are reviewed within one business day, after which we tell you the outcome."
+      ],
+      "cached": false,
+      "input_tokens": 273,
+      "output_tokens": 191
+    },
+    {
+      "id": "q14",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 288,
+      "output_tokens": 27
+    },
+    {
+      "id": "q15",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 378,
+      "output_tokens": 209
+    },
+    {
+      "id": "q16",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 330,
+      "output_tokens": 35
+    },
+    {
+      "id": "q17",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 274,
+      "output_tokens": 18
+    },
+    {
+      "id": "q31",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 404,
+      "output_tokens": 234
+    },
+    {
+      "id": "q32",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 296,
+      "output_tokens": 39
+    },
+    {
+      "id": "q34",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 351,
+      "output_tokens": 141
+    },
+    {
+      "id": "q35",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 452,
+      "output_tokens": 428
+    },
+    {
+      "id": "q36",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 315,
+      "output_tokens": 90
+    },
+    {
+      "id": "q37",
+      "grounded": false,
+      "unsupported": [
+        "You should contact the merchant about their returns policy first, as refunds are a matter between you and the merchant."
+      ],
+      "cached": false,
+      "input_tokens": 401,
+      "output_tokens": 379
+    },
+    {
+      "id": "q38",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 272,
+      "output_tokens": 18
+    },
+    {
+      "id": "q43",
+      "grounded": true,
+      "unsupported": [],
+      "cached": false,
+      "input_tokens": 460,
+      "output_tokens": 227
+    },
+    {
+      "id": "q44",
+      "grounded": false,
+      "unsupported": [
+        "If it's a duplicate payment for something you did purchase, report it in the app and Nimbus will verify it against the payment record."
+      ],
+      "cached": true,
+      "input_tokens": 344,
+      "output_tokens": 74
+    },
+    {
+      "id": "q45",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 326,
+      "output_tokens": 52
+    },
+    {
+      "id": "q46",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 307,
+      "output_tokens": 279
+    },
+    {
+      "id": "q47",
+      "grounded": false,
+      "unsupported": [
+        "This customer should be treated as vulnerable.",
+        "Handle their refund request with discretion, and note that normal refund limits may be waived at specialist care's discretion if appropriate."
+      ],
+      "cached": true,
+      "input_tokens": 358,
+      "output_tokens": 710
+    },
+    {
+      "id": "q48",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 276,
+      "output_tokens": 29
+    },
+    {
+      "id": "q49",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 404,
+      "output_tokens": 234
+    },
+    {
+      "id": "q50",
+      "grounded": true,
+      "unsupported": [],
+      "cached": true,
+      "input_tokens": 374,
+      "output_tokens": 298
+    }
+  ]
+}

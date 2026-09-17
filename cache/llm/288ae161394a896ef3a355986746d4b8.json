@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Yes, you need approval before issuing a refund of 800 pounds. Any refund over 500 pounds requires approval from a team lead before it is issued.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-202\",\n      \"section\": \"Approval threshold\",\n      \"quote\": \"Any refund over 500 pounds requires approval from a team lead before it is issued.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 389,
+  "output_tokens": 141,
+  "model_seconds": 1.24
+}

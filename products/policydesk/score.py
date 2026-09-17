@@ -33,7 +33,8 @@ def line(label: str, r, target: float):
 
 
 def main():
-    files = sorted(RUNS.glob("*-v*.json"))
+    files = sorted(p for p in RUNS.glob("*-v*.json")
+                   if "groundedness" not in p.name)
     if not files:
         sys.exit(f"No run files in {RUNS}")
 
