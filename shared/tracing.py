@@ -15,14 +15,30 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+from shared.redact import redact
+
+def mask_pii(data):
+    """Called by Langfuse on every input and output before it is sent.
+
+    Traces are a database of customer questions. Without this, the card
+    number a customer pasted is stored in full, searchable, forever.
+    """
+    if isinstance(data, str):
+        return redact(data)
+    if isinstance(data, dict):
+        return {k: mask_pii(v) for k, v in data.items()}
+    if isinstance(data, list):
+        return [mask_pii(v) for v in data]
+    return data
+
 ENABLED = bool(os.environ.get("LANGFUSE_PUBLIC_KEY"))
 ENVIRONMENT = os.environ.get("LANGFUSE_ENVIRONMENT", "dev")
 
 if ENABLED:
-    from langfuse import get_client
+    from langfuse import Langfuse
     from langfuse import propagate_attributes as _propagate
 
-    tracer = get_client()
+    tracer = Langfuse(mask=mask_pii)
 else:
     tracer = None
 
