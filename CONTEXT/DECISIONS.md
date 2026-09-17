@@ -76,3 +76,14 @@ rate limiting, and incremental Zendesk-shaped ingestion. The dataset being
 small is not a reason to build a toy. Where live infrastructure genuinely
 does not exist, we build the same shape against a local source so switching
 is a credentials change, not a redesign.
+
+## D15. Retrieval filters on status, visibility and supersedes
+17 Sept 2026. The filter is enforced in SQL at query time, not in the prompt
+and not at ingest. In the prompt it would be advice the model can ignore, and
+it did ignore it 8 times in 50. At ingest the index could not serve agents
+and customers from the same table, and an archived article would be
+unrecoverable if it were ever republished.
+
+Measured effect: C1 breaches 3 to 0, banned citations 8 to 0, and
+unexpectedly recall@1 71% to 93%, because the superseded article had been
+outranking the live one.
