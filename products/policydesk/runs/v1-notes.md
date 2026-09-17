@@ -12,12 +12,22 @@ failure but is the best answer in the run.
 
 ## Headline
 
-34 of 50 clean. 16 cases carry at least one failure.
+30 of 50 clean. 20 cases carry at least one failure.
 
-Every one of the 16 traces back to four missing things, and not one of them
+That is down from 34 after the groundedness judge ran. Four cases I had
+read as clean, q04, q11, q44 and q47, are not. I was reading for invented
+facts. The judge reads whether each sentence traces to a quote, which is
+what the spec actually asks for.
+
+q04 is the arguable one, counted as a failure for consistency rather than
+because it is obviously wrong. It restates a 14 day rule as "those 5 days"
+to fit the customer.
+
+Every one of the 20 traces back to four missing things, and not one of them
 is a hallucination in the usual sense. The model rarely invented facts. It
-was handed material it should never have seen, and given no rules about
-scope, contradiction or when to stop.
+was handed material it should never have seen, given no rules about scope,
+contradiction or when to stop, and never told that a claim needs a quote
+behind it rather than merely a source somewhere in the retrieved set.
 
 ---
 
@@ -36,6 +46,7 @@ A case can carry more than one, so these sum to more than 16.
 | `poisoned_abstention` | 1 | q36 |
 | `uncited_claim` | 0 | none |
 | `fabricated_quote` | 0 | none |
+| `uncited_support` | 3 | q11, q44, q47 |
 
 Two modes were not in the starting taxonomy and were added after reading.
 
@@ -50,6 +61,18 @@ wrong answer. q36 refused to answer a crypto question because the draft
 article told it not to rely on the draft article, while the live NIM-106
 answered it plainly. A banned source did damage without ever being cited,
 so the citation check could never have caught it.
+**`uncited_support`.** The claim is true, the evidence was retrieved, and it
+was never cited. q47 tells an agent to treat a bereaved customer as
+vulnerable, which is correct and comes straight from NIM-203. But that
+classification sits in the article's "Identifying vulnerability" section,
+which the answer never quoted. The two quotes it gave support different
+sentences.
+
+Invisible to `citations_check.py`, which only checks whether a cited article
+is allowed. Invisible to a human reading for invented facts, because nothing
+was invented. Only the groundedness judge catches it.
+
+The fix is a better citation, not a worse answer.
 
 ---
 
@@ -138,6 +161,37 @@ Yesterday's hand run of the same q31 question produced an uncited claim.
 This run cited it. Same prompt, same model, temperature 0. Temperature 0 is
 not deterministic, again.
 
+---
+## Groundedness, and validating the judge
+
+Judge: Sonnet 5 on `prompts/judge-v1.md`, a stronger model than the Haiku
+being judged. It scores each answer against its own citations only, which is
+stricter than ragas faithfulness and is what Section 6 rule 1 requires.
+
+**29 of 35 answered cases grounded, 83%, against a 98% target.**
+
+The judge was not trusted before it was checked. Hand reading found zero
+uncited claims. The judge found six. That disagreement was the validation
+set, and it beat the synthetic one we were going to build.
+
+On review the judge was right on five of six. q11 turned "pending payments
+can often be cancelled" into a flat "you should not request a refund",
+deleting a hedge. q44 volunteered an unrelated branch about duplicate
+payments. q31 and q49 invented the reconciling clause "though some sources
+indicate 5 to 10 business days". q47 is `uncited_support`.
+
+q04 is pedantic but defensible. It restated the 14 day rule as "those 5
+days" to fit the customer, which is applying the policy rather than stating
+it, and Section 2 says this product does not apply policy.
+
+So the judge runs stricter than a human and flags framing sentences. That is
+the right direction to err, the same asymmetry the spec argues for on
+escalation. A needless flag costs a read. A missed one ships.
+
+**The two layers do not overlap.** The judge passed "refunds generally take
+10 to 20 business days" in q31 because it is quoted accurately. It happens
+to be quoted from an archived article. Groundedness cannot see staleness and
+the citation checker cannot see groundedness. You need both.
 ---
 
 ## What this means for the next two runs
