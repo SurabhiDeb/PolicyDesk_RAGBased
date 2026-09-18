@@ -126,3 +126,21 @@ numbers, because redaction only protects what you collect next.
 by anyone with access, and their layers are readable. Configuration arrives
 at runtime as environment variables, which is also why shared/db.py has read
 its DSN from the environment since Beat 2.
+
+## D22. Hybrid retrieval was built, measured, and rejected
+18 Sept 2026. Vector plus Postgres full-text, fused with Reciprocal Rank
+Fusion. recall@5 fell 100% to 96.4%, recall@1 96.4% to 92.9%, MRR 0.98 to
+0.95, and q44's gold article was missed entirely. The v2 filter had already
+taken all the headroom, so keyword search had nothing to add and pushed
+NIM-106 out of the top five on the cases that needed it. retrieve.py stays
+on filtered-v1. retrieve_hybrid.py stays in the repo as the record.
+
+The theory is still sound. Keyword search is measurably better at exact
+values, which is hard case 3 in SPEC.md. The corpus is 43 chunks and too
+clean for that to pay. Revisit when the corpus is thousands of articles.
+
+## D23. LangChain is an adapter over our own retrieval, not a replacement
+18 Sept 2026. lc_retriever.py wraps retrieve.search behind BaseRetriever.
+LangChain's built-in vector stores expect their own schema, and rewriting a
+working pgvector index with visibility filtering to fit a library is the
+wrong trade. Verified the audience boundary survives the wrapper.

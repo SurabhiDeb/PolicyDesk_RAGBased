@@ -9,19 +9,13 @@ Ready to start Product 2 (PolicyDesk, RAG).
 
 ## Next step
 
-Two items planned for Beat 6 that were not finished before the service layer.
-Do them in this order, before Beat 8, because Beat 8 changes ingestion and
-would make a retrieval comparison two variables instead of one.
+6b. Haiku against Sonnet on prompt v4, with ragas as a second opinion.
+Roughly 35 rupees. Then Beat 8, ingestion.
 
-  6a  Hybrid retrieval on LangChain, vector plus keyword, and a reranker.
-      Expected to move nothing. recall@5 is 100% and recall@1 is 96.4%, so
-      there is no headroom on this test set. Built to learn the standard
-      stack and to record the result either way.
-
-  6b  Haiku against Sonnet on prompt v4, with ragas as a second opinion.
-      This one has a live question behind it, unresolved since Triage.
-
-  Then Beat 8, ingestion.
+## 6a done
+  Hybrid retrieval built, measured, rejected. v4 remains the shipping config.
+  LangChain retriever wrapper in lc_retriever.py.
+  Notes in runs/v5-notes.md.
 
 ## Note on ordering
 
