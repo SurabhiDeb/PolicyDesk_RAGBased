@@ -9,13 +9,12 @@ Ready to start Product 2 (PolicyDesk, RAG).
 
 ## Next step
 
-6b. Haiku against Sonnet on prompt v4, with ragas as a second opinion.
-Roughly 35 rupees. Then Beat 8, ingestion.
+Beat 8, the last one. Ingestion the real way.
 
-## 6a done
-  Hybrid retrieval built, measured, rejected. v4 remains the shipping config.
-  LangChain retriever wrapper in lc_retriever.py.
-  Notes in runs/v5-notes.md.
+## 6b done
+  Haiku against Sonnet on prompt v4. Haiku kept, on failure mode not score.
+  Notes in runs/v6-notes.md. Triage's open question answered.
+  score.py verdict bug fixed, a perfect score was reporting FAIL at n=53.
 
 ## Note on ordering
 

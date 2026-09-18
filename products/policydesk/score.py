@@ -20,10 +20,16 @@ ARTICLES = HERE / "data" / "articles.jsonl"
 
 
 def verdict(r, target: float) -> str:
-    """A target inside the interval is not a pass. It is a bigger dataset."""
-    if r.low >= target:
+    """A target inside the interval is not a pass. It is a bigger dataset.
+
+    The tolerance is for floating point. At some sample sizes the Wilson
+    upper bound for a perfect score lands at 0.9999999999999999, and without
+    it a 53 of 53 result reports as FAIL.
+    """
+    tolerance = 1e-9
+    if r.low >= target - tolerance:
         return "ok"
-    if r.high < target:
+    if r.high < target - tolerance:
         return "FAIL"
     return "cannot confirm"
 

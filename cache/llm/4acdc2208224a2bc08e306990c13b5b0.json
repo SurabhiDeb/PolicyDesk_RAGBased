@@ -1,0 +1,8 @@
+{
+  "text": "{\"status\": \"answered\", \"answer\": \"No more than two goodwill refunds may be issued to a customer in any twelve month period.\", \"citations\": [{\"article_id\": \"NIM-201\", \"section\": \"Limits\", \"quote\": \"No more than two goodwill refunds per customer in any twelve month period.\"}], \"confidence\": \"high\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1131,
+  "output_tokens": 107,
+  "model_seconds": 4.53
+}

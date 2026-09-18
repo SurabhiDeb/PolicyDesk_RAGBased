@@ -1,0 +1,8 @@
+{
+  "text": "{\"status\": \"no_answer\", \"answer\": null, \"citations\": [], \"confidence\": \"high\", \"handoff_reason\": \"This question is about raising a chargeback, which belongs to the disputes team and is outside my scope.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1141,
+  "output_tokens": 103,
+  "model_seconds": 4.41
+}

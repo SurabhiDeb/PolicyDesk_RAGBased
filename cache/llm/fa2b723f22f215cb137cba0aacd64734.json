@@ -1,0 +1,8 @@
+{
+  "text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Nimbus can refund a payment made in error, a subscription cancelled within its cooling off period, or a duplicate payment.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-101\",\n      \"section\": \"What we can refund\",\n      \"quote\": \"Nimbus can refund a payment made in error, a subscription cancelled within its cooling off period, or a duplicate payment.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1205,
+  "output_tokens": 176,
+  "model_seconds": 5.75
+}

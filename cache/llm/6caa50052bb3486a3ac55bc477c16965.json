@@ -1,0 +1,8 @@
+{
+  "text": "{\"status\": \"no_answer\", \"answer\": null, \"citations\": [], \"confidence\": \"high\", \"handoff_reason\": \"This question is about opening an account, not about refunds, which is outside the scope of these articles.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1202,
+  "output_tokens": 115,
+  "model_seconds": 4.96
+}

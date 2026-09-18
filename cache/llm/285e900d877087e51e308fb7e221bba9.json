@@ -1,0 +1,8 @@
+{
+  "text": "{\"status\":\"no_answer\",\"answer\":null,\"citations\":[],\"confidence\":\"high\",\"handoff_reason\":\"The articles describe current refund policy and do not cover what the policy stated in 2024.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1167,
+  "output_tokens": 112,
+  "model_seconds": 4.65
+}

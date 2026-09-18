@@ -1,0 +1,8 @@
+{
+  "text": "{\n  \"status\": \"answered\",\n  \"answer\": \"No. The 14 day consumer cooling off period does not apply to business accounts. Business account refunds follow the terms in your business agreement, not the consumer terms in this help centre.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-107\",\n      \"section\": \"Cooling off\",\n      \"quote\": \"The 14 day consumer cooling off period does not apply to business accounts.\"\n    },\n    {\n      \"article_id\": \"NIM-107\",\n      \"section\": \"Refunds on Nimbus Business\",\n      \"quote\": \"Business account refunds follow the terms in your business agreement, not the consumer terms in this help centre.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1139,
+  "output_tokens": 388,
+  "model_seconds": 6.18
+}

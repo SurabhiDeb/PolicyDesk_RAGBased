@@ -1,0 +1,8 @@
+{
+  "text": "{\"status\":\"answered\",\"answer\":\"No. After the 14-day cooling off period has passed, the subscription runs to the end of its current term and no partial-term refund is given.\",\"citations\":[{\"article_id\":\"NIM-104\",\"section\":\"After 14 days\",\"quote\":\"After 14 days the subscription runs to the end of its current term. We do not refund a partial term.\"}],\"confidence\":\"high\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1165,
+  "output_tokens": 178,
+  "model_seconds": 5.17
+}

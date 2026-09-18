@@ -1,0 +1,8 @@
+{
+  "text": "{\"status\": \"no_answer\", \"answer\": null, \"citations\": [], \"confidence\": \"high\", \"handoff_reason\": \"The articles do not address whether someone else can request a refund on another person's behalf.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1113,
+  "output_tokens": 178,
+  "model_seconds": 6.14
+}

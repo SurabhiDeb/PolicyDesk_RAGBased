@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"A duplicate payment is one that has the same amount, the same merchant, and a timestamp within 60 minutes of the original.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-105\",\n      \"section\": \"How to check\",\n      \"quote\": \"A duplicate has the same amount, the same merchant, and a timestamp within 60 minutes of the original.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1114,
+  "output_tokens": 194,
+  "model_seconds": 5.41
+}

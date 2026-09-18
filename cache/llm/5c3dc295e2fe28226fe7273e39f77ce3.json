@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Payments older than 180 days cannot be refunded through the app; you would need to contact support instead for older payments.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-102\",\n      \"section\": \"If the app will not let you\",\n      \"quote\": \"Payments older than 180 days cannot be refunded through the app. Contact support instead.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1125,
+  "output_tokens": 297,
+  "model_seconds": 6.73
+}

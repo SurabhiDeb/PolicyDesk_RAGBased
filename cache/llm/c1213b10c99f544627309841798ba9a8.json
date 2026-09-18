@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"No. Nimbus cannot refund cryptocurrency purchases, along with gambling transactions and cash withdrawals, regardless of the circumstances of the purchase.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-106\",\n      \"section\": \"Payments we cannot refund\",\n      \"quote\": \"We cannot refund gambling transactions, cryptocurrency purchases, or cash withdrawals.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1153,
+  "output_tokens": 266,
+  "model_seconds": 5.45
+}

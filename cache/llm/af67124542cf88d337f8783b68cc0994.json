@@ -1,0 +1,8 @@
+{
+  "text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Yes. Subscriptions bought through Nimbus can be cancelled within 14 days of purchase for a full refund, provided you have not used the service. If you have used the service during those 14 days, the refund covers the unused portion, calculated daily.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-104\",\n      \"section\": \"Cooling off period\",\n      \"quote\": \"Subscriptions bought through Nimbus can be cancelled within 14 days of purchase for a full refund, provided you have not used the service.\"\n    },\n    {\n      \"article_id\": \"NIM-104\",\n      \"section\": \"Partial use\",\n      \"quote\": \"If you have used the service during the 14 days, we refund the unused portion, calculated daily.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1183,
+  "output_tokens": 375,
+  "model_seconds": 7.3
+}

@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"If you have used the service during the 14 day cooling off period, you receive a refund for the unused portion, calculated daily.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-104\",\n      \"section\": \"Partial use\",\n      \"quote\": \"If you have used the service during the 14 days, we refund the unused portion, calculated daily.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}\n```",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1146,
+  "output_tokens": 171,
+  "model_seconds": 4.99
+}

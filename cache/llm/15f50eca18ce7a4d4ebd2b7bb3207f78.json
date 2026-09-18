@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Business refund requests go to your account manager, not to general support.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-107\",\n      \"section\": \"Who to contact\",\n      \"quote\": \"Business refund requests go to your account manager, not to general support.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}\n```",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1102,
+  "output_tokens": 143,
+  "model_seconds": 4.42
+}

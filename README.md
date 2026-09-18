@@ -143,3 +143,7 @@ least as well as Sonnet on prompt v2. Not switched. Needs an
 escalation-recall check first.
 The promptfoo v2/Sonnet discrepancy. Suspected cause is reasoning tokens
 consuming the max_tokens budget and truncating output.
+
+Answered in PolicyDesk, see products/policydesk/runs/v6-notes.md. The two
+models fail on different cases rather than at different rates, and Haiku hands
+off to a human more readily, which is what escalation exists for.

@@ -144,3 +144,21 @@ clean for that to pay. Revisit when the corpus is thousands of articles.
 LangChain's built-in vector stores expect their own schema, and rewriting a
 working pgvector index with visibility filtering to fit a library is the
 wrong trade. Verified the audience boundary survives the wrapper.
+
+## D24. PolicyDesk ships on Haiku 4.5, chosen on failure mode not on score
+18 Sept 2026. Sonnet 5 scored identically on abstention recall, 86.4% for
+both, but on different cases. Sonnet fixed the App Store contradiction that
+four prompt versions could not, and broke q41, answering a bereaved customer
+with app instructions instead of handing off. Add 3x cost and a latency
+budget missed on both p50 and p95.
+
+For a product where vulnerability is a named failure class, Haiku's failure
+mode is the safer one. A stronger model reasons better and holds back less.
+
+## D25. Triage's open model question is answered, differently than asked
+18 Sept 2026. The Triage README asks whether Haiku is good enough to switch
+to. The question cannot be settled by one score, because the models fail on
+different cases. "Scored at least as well" is not "is at least as good".
+Where escalation exists to protect vulnerable customers, Haiku's greater
+willingness to hand off is the behaviour the spec wants. That is a better
+argument for Haiku than cost, and it was invisible in the aggregate.

@@ -1,0 +1,8 @@
+{
+  "text": "{\n  \"status\": \"answered\",\n  \"answer\": \"If the payment you want refunded is older than 180 days, it cannot be refunded through the app and you should contact support instead. If a refund has already been approved, it normally reaches your Nimbus account within 3 to 5 business days. If it has been longer than 10 business days since approval and the refund still hasn't arrived, you should contact support.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-102\",\n      \"section\": \"If the app will not let you\",\n      \"quote\": \"Payments older than 180 days cannot be refunded through the app. Contact support instead.\"\n    },\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"How long a refund takes\",\n      \"quote\": \"Once approved, a refund reaches your Nimbus account within 3 to 5 business days.\"\n    },\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"Delays\",\n      \"quote\": \"If your refund has not arrived after 10 business days, contact support.\"\n    }\n  ],\n  \"confidence\": \"medium\"\n}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1132,
+  "output_tokens": 695,
+  "model_seconds": 9.78
+}

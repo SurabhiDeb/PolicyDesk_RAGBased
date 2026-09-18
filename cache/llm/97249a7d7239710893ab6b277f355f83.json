@@ -1,0 +1,8 @@
+{
+  "text": "{\"status\":\"answered\",\"answer\":\"Payments older than 180 days cannot be refunded through the app; you would need to contact support instead.\",\"citations\":[{\"article_id\":\"NIM-102\",\"section\":\"How to request a refund / If the app will not let you\",\"quote\":\"Payments older than 180 days cannot be refunded through the app. Contact support instead.\"}],\"confidence\":\"high\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1121,
+  "output_tokens": 152,
+  "model_seconds": 4.63
+}

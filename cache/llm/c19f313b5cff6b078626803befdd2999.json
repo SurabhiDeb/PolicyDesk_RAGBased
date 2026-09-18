@@ -1,0 +1,8 @@
+{
+  "text": "{\n  \"status\": \"answered\",\n  \"answer\": \"If your refund has not arrived after 10 business days, you should contact support.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"Delays\",\n      \"quote\": \"If your refund has not arrived after 10 business days, contact support.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1119,
+  "output_tokens": 155,
+  "model_seconds": 5.22
+}

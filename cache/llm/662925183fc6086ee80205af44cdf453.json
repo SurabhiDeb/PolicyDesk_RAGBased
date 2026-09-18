@@ -1,0 +1,8 @@
+{
+  "text": "{\"status\":\"no_answer\",\"answer\":null,\"citations\":[],\"confidence\":\"high\",\"handoff_reason\":\"The articles do not cover whether interest is paid on late refunds.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1125,
+  "output_tokens": 94,
+  "model_seconds": 5.71
+}

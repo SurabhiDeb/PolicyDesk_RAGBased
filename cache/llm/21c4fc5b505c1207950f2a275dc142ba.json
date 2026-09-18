@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Most refund requests are reviewed within one business day, and you will be told the outcome after that review.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-102\",\n      \"section\": \"What happens next\",\n      \"quote\": \"We review the request and tell you the outcome. Most requests are reviewed within one business day.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}\n```",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1119,
+  "output_tokens": 161,
+  "model_seconds": 4.15
+}

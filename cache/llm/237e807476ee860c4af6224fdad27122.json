@@ -1,0 +1,8 @@
+{
+  "text": "{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [\n    {\"article_id\": \"NIM-108\", \"section\": \"Subscriptions bought in an app store\", \"quote\": \"Where a subscription was purchased through the Apple App Store or Google Play using your Nimbus card, contact Nimbus to request a refund. We can raise the refund on your behalf.\"},\n    {\"article_id\": \"NIM-109\", \"section\": \"Subscriptions billed by a third party\", \"quote\": \"Where a subscription is billed by a third party, including the Apple App Store and Google Play, Nimbus cannot issue a refund.\"}\n  ],\n  \"confidence\": \"low\",\n  \"handoff_reason\": \"NIM-108 and NIM-109 disagree on whether Nimbus can refund App Store subscriptions, so I can't give a single answer.\"\n}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1169,
+  "output_tokens": 638,
+  "model_seconds": 8.95
+}

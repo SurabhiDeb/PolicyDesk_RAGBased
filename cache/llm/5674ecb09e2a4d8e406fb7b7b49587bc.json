@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"You do not need to send a receipt. You just need to report the duplicate payment in the app, and it will be verified against the payment record.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-105\",\n      \"section\": \"What we need from you\",\n      \"quote\": \"Nothing. Report it in the app and we verify it against the payment record ourselves.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}\n```",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1100,
+  "output_tokens": 225,
+  "model_seconds": 5.2
+}

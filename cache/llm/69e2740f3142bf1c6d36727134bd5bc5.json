@@ -1,0 +1,8 @@
+{
+  "text": "{\"status\":\"no_answer\",\"answer\":null,\"citations\":[],\"confidence\":\"low\",\"handoff_reason\":\"The articles cover card payment refund timescales and general refund eligibility, but do not address whether bank transfer payments can be refunded.\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1156,
+  "output_tokens": 204,
+  "model_seconds": 6.43
+}

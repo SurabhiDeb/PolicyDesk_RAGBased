@@ -1,0 +1,8 @@
+{
+  "text": "{\"status\":\"answered\",\"answer\":\"Nimbus can only refund a payment made in error, a subscription cancelled within its cooling off period, or a duplicate payment. A situation where the shop delivered exactly what was ordered but it is no longer wanted does not fall into any of these categories, so it would not qualify for a refund under this policy.\",\"citations\":[{\"article_id\":\"NIM-101\",\"section\":\"Refunds overview / What we can refund\",\"quote\":\"Nimbus can refund a payment made in error, a subscription cancelled within its cooling off period, or a duplicate payment.\"}],\"confidence\":\"high\"}",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1181,
+  "output_tokens": 379,
+  "model_seconds": 6.88
+}

@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"Once a refund is approved, it reaches your Nimbus account within 3 to 5 business days. If the refund is going to a debit card, it usually arrives within 5 business days, though the card scheme controls the final step. If the refund has not arrived after 10 business days, you should contact support.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"How long a refund takes\",\n      \"quote\": \"Once approved, a refund reaches your Nimbus account within 3 to 5 business days.\"\n    },\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"Card payments\",\n      \"quote\": \"Refunds to a debit card usually arrive within 5 business days. The card scheme controls the final step.\"\n    },\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"Delays\",\n      \"quote\": \"If your refund has not arrived after 10 business days, contact support.\"\n    }\n  ],\n  \"confidence\": \"high\"\n}\n```",
+  "model": "anthropic/claude-sonnet-5",
+  "finish_reason": "stop",
+  "input_tokens": 1115,
+  "output_tokens": 498,
+  "model_seconds": 6.52
+}
