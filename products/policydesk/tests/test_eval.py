@@ -18,12 +18,28 @@ RUNS = HERE / "runs"
 ARTICLES = HERE / "data" / "articles.jsonl"
 
 
+# The gate measures what we ship, D24, not whatever experiment ran last.
+# Comparison runs against other models and retrievers stay in runs/ as the
+# evidence for those decisions and must never become what CI enforces.
+SHIPPED_MODEL = "haiku-4-5"
+SHIPPED_RETRIEVER = "filtered-v1"
+
+
 @pytest.fixture(scope="session")
 def run():
     files = sorted(p for p in RUNS.glob("*-v*.json")
                    if "groundedness" not in p.name)
     assert files, f"no run record in {RUNS}"
-    return json.loads(files[-1].read_text())
+
+    for path in reversed(files):
+        record = json.loads(path.read_text())
+        meta = record["meta"]
+        if (SHIPPED_MODEL in meta.get("chat_model_served", "")
+                and meta.get("retriever") == SHIPPED_RETRIEVER):
+            return record
+
+    raise AssertionError(
+        f"no run in {RUNS} used {SHIPPED_MODEL} with {SHIPPED_RETRIEVER}")
 
 
 @pytest.fixture(scope="session")

@@ -205,11 +205,11 @@ Accepted deliberately, not forgotten.
 Abstention recall is 86.4% against a 95% target. q34 and q35 contradict,
 q37 is a scope boundary. The articles causing them stay, see D17.
 Groundedness is unmeasured on prompt v4. Last measured at 75% on v2.
-The CI gate reads the newest run file, which is currently the Sonnet
+Fixed: """The CI gate reads the newest run file, which is currently the Sonnet
 comparison rather than the shipping Haiku configuration.
 corpus_sha and the C2 verbatim check read articles.jsonl, which is no
 longer what retrieval serves. 3 of 53 quotes differ, all one sentence in
-NIM-106. See D28.
+NIM-106. See D28."""
 A full sync against an empty source deletes the whole index and reports
 success. Harmless with a local file, real against a live API.
 The high water mark is recomputed each run and can move backwards.

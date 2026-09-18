@@ -196,10 +196,10 @@ Product 3, OpsAgent. Beat 1, the spec.
 
 ## Product 2 ingestion, Beat 8 known limits
 
-  The gate does not measure the shipping configuration. test_eval.py and
+  Fixed: """The gate does not measure the shipping configuration. test_eval.py and
   score.py both read the newest run file, which is now the v6 Sonnet
   comparison. PolicyDesk ships on Haiku, D24, whose numbers are in the v4
-  run. Every experiment that runs last silently becomes what CI gates on.
+  run. Every experiment that runs last silently becomes what CI gates on."""
 
   A full sync against an empty source deletes the entire index and reports
   it as a success. `article_id <> ALL(empty array)` is true for every row,
