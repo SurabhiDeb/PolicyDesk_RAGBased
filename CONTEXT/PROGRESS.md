@@ -9,9 +9,25 @@ Ready to start Product 2 (PolicyDesk, RAG).
 
 ## Next step
 
-Product 2, Beat 8, the last one. Ingestion the real way. A Zendesk-shaped
-source, incremental sync on updated_at, HTML body parsing, upserts instead of
-rebuilding the index from scratch.
+Two items planned for Beat 6 that were not finished before the service layer.
+Do them in this order, before Beat 8, because Beat 8 changes ingestion and
+would make a retrieval comparison two variables instead of one.
+
+  6a  Hybrid retrieval on LangChain, vector plus keyword, and a reranker.
+      Expected to move nothing. recall@5 is 100% and recall@1 is 96.4%, so
+      there is no headroom on this test set. Built to learn the standard
+      stack and to record the result either way.
+
+  6b  Haiku against Sonnet on prompt v4, with ragas as a second opinion.
+      This one has a live question behind it, unresolved since Triage.
+
+  Then Beat 8, ingestion.
+
+## Note on ordering
+
+Beats 1 to 6 ran in sequence and that is the pattern that carries to
+Products 3 and 4. Beats 7 and 8 are additions to the six-beat rhythm, not
+part of it. 6a and 6b are Beat 6 work finished late.
 
 ## Product 2 service layer, Beat 7 done
   POST /ask with API key auth, 20/min rate limit, 422 on bad input
@@ -140,3 +156,10 @@ proved it blocks by deliberately breaking a run file.
 Open question: Haiku 4.5 is 3x faster (1.3s vs 4.2s) and half the price
 than Sonnet 5, and scored at least as well on prompt v2 in a promptfoo
 matrix. Not switched. Needs an escalation-recall check first.
+
+## Note on ordering
+
+Beats 1 to 6 ran in sequence. Two items planned for Beat 6, hybrid retrieval
+on LangChain and the Haiku against Sonnet matrix, were not done before the
+service layer and are being finished after it. Beats 7 and 8 are additions to
+the original six-beat rhythm, not part of it.
