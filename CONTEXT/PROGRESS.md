@@ -9,12 +9,7 @@ Ready to start Product 2 (PolicyDesk, RAG).
 
 ## Next step
 
-Beat 8, the last one. Ingestion the real way.
-
-## 6b done
-  Haiku against Sonnet on prompt v4. Haiku kept, on failure mode not score.
-  Notes in runs/v6-notes.md. Triage's open question answered.
-  score.py verdict bug fixed, a perfect score was reporting FAIL at n=53.
+Beat 8 done. Start project 3.
 
 ## Note on ordering
 
@@ -156,3 +151,74 @@ Beats 1 to 6 ran in sequence. Two items planned for Beat 6, hybrid retrieval
 on LangChain and the Haiku against Sonnet matrix, were not done before the
 service layer and are being finished after it. Beats 7 and 8 are additions to
 the original six-beat rhythm, not part of it.
+
+## Product 2 ingestion, Beat 8 known limits
+
+  A full sync against an empty source deletes the entire index and reports
+  it as a success. `article_id <> ALL(empty array)` is true for every row,
+  so PRUNE_ARTICLES matches everything. Verified against Postgres, not
+  reasoned about. Harmless while the source is a local JSON file, because
+  emptying it takes a deliberate act. It becomes real the day
+  source_zendesk.py points at the live API, where an empty result is an
+  ordinary failure, an expired token, a wrong locale, a filter matching
+  nothing. Guard it before going live, not before.
+
+  The high water mark is recomputed from the source every run rather than
+  carried forward, so it can move backwards. Restoring an older copy of the
+  source rewound it from 2026-09-18 to 2026-03-14, seen in the restore run.
+  Against a live Zendesk a restored backup would silently re-sync months of
+  articles.
+
+  The incremental path fetches the whole corpus anyway, only to compute the
+  high water mark. It is O(entire help centre) per run, which defeats the
+  incremental endpoint it exists to use. The watermark should come from the
+  changed set with the previous value as its floor.
+
+  ## Where we are right now
+
+Product 1 (Triage) is COMPLETE at a deliberately limited scope.
+Product 2 (PolicyDesk) is COMPLETE, Beats 1 to 8.
+Ready to start Product 3 (OpsAgent, tool use).
+
+## Next step
+
+Product 3, OpsAgent. Beat 1, the spec.
+
+## Product 2 ingestion, Beat 8 done
+  source_zendesk.py translates Zendesk's article shape into ours and is the
+  only file that knows the source system
+  html_sections.py chunks real help centre HTML instead of markdown
+  sync.py upserts on (article_id, section), prunes dead sections on every
+  run, and prunes dead articles on --full only
+  sync_state holds the high water mark so a run knows where the last got to
+  Proved by breaking the source on purpose, see D27
+  Index is 16 articles, 43 chunks, unchanged from the ingest.py corpus
+
+## Product 2 ingestion, Beat 8 known limits
+
+  The gate does not measure the shipping configuration. test_eval.py and
+  score.py both read the newest run file, which is now the v6 Sonnet
+  comparison. PolicyDesk ships on Haiku, D24, whose numbers are in the v4
+  run. Every experiment that runs last silently becomes what CI gates on.
+
+  A full sync against an empty source deletes the entire index and reports
+  it as a success. `article_id <> ALL(empty array)` is true for every row,
+  so PRUNE_ARTICLES matches everything. Verified against Postgres, not
+  reasoned about. Harmless while the source is a local JSON file, because
+  emptying it takes a deliberate act. It becomes real the day
+  source_zendesk.py points at the live API, where an empty result is an
+  ordinary failure, an expired token, a wrong locale, a filter matching
+  nothing. Guard it before going live, not before.
+
+  The high water mark is recomputed from the source every run rather than
+  carried forward, so it can move backwards. Restoring an older copy of the
+  source rewound it from 2026-09-18 to 2026-03-14, seen in the restore run.
+  Against a live Zendesk a restored backup would silently re-sync months of
+  articles.
+
+  The incremental path fetches the whole corpus anyway, only to compute the
+  high water mark. It is O(entire help centre) per run, which defeats the
+  incremental endpoint it exists to use. The watermark should come from the
+  changed set with the previous value as its floor.
+
+  corpus_sha and the C2 quote check still read articles.jsonl. See D28.

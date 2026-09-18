@@ -8,7 +8,7 @@ Owner: Surabhi. Started September 2026.
 | # | Product | What it does | Status |
 |---|---|---|---|
 | 1 | **Triage** | Routes a customer support message to a team, urgency, escalation | **Done** |
-| 2 | PolicyDesk | Answers refund questions from help docs (RAG) | Not started |
+| 2 | PolicyDesk | Answers refund questions from help docs (RAG) | **Done** |
 | 3 | OpsAgent | Looks up orders and issues refunds (tool use) | Not started |
 | 4 | Coach | Multi-turn assistant with a fixed persona | Not started |
 
@@ -147,3 +147,78 @@ consuming the max_tokens budget and truncating output.
 Answered in PolicyDesk, see products/policydesk/runs/v6-notes.md. The two
 models fail on different cases rather than at different rates, and Haiku hands
 off to a human more readily, which is what escalation exists for.
+
+---
+
+## Product 2 results
+
+Prompt v4, retriever filtered-v1, Haiku 4.5, 50 questions, 28 with a gold
+article. Numbers from runs/20260917-153710Z-v4.json.
+
+Metric                  Result              Target
+recall@5                100%                none set
+recall@1                96.4%               80%
+MRR                     0.98                none set
+Abstention recall       86.4%               FAILS the 95% target
+Abstention precision    95.0%               70%
+Banned articles cited   0                   0
+C1 internal leaks       0                   0
+Unparseable             0                   0
+Cost                    $0.0811 per run     none set
+Latency                 p50 1.53s, p95 2.77s   under the 6s budget
+
+Three known failures, q34 and q35 on contradiction and q37 on scope. They
+are deliberate and the articles causing them stay in the corpus. See D17.
+
+## What Product 2 added
+
+1. A filter in the prompt is advice. A filter in SQL is a rule. The prompt
+   version was ignored 8 times in 50. Moving it into the query fixed C1
+   breaches and unexpectedly lifted recall@1 from 71% to 93%, because a
+   superseded article had been outranking the live one.
+2. Scope is decided by the question, not by the answer. A refund question is
+   still ours when the answer is no.
+3. Do not delete the test to pass the test. Three failures would vanish if
+   we removed the contradictory articles, and the number left behind would
+   mean nothing.
+4. Prompt iteration has an end. Four versions, each trading one case for
+   another. The remaining failures need a different kind of fix.
+5. The audience comes from the API key, never from the request. The first
+   version let any caller declare itself an agent and read internal
+   articles, which bypassed every visibility rule with one word of JSON.
+6. Redaction protects only what you collect next. The logs were clean and
+   the tracer was storing every question in full.
+7. A better model is not automatically a safer one. Sonnet and Haiku scored
+   identically on abstention recall but failed on different cases, and
+   Sonnet answered a bereaved customer with app instructions. Shipped on
+   failure mode, not on score.
+8. Build the real shape even when the data is small. Hybrid retrieval was
+   built properly and then rejected on measurement, not on taste.
+9. An upsert can add and update and it can never remove. An incremental
+   sync can neither see a deletion nor heal one, proved by breaking the
+   source on purpose.
+
+## Known limitations of Product 2
+
+Accepted deliberately, not forgotten.
+
+Abstention recall is 86.4% against a 95% target. q34 and q35 contradict,
+q37 is a scope boundary. The articles causing them stay, see D17.
+Groundedness is unmeasured on prompt v4. Last measured at 75% on v2.
+The CI gate reads the newest run file, which is currently the Sonnet
+comparison rather than the shipping Haiku configuration.
+corpus_sha and the C2 verbatim check read articles.jsonl, which is no
+longer what retrieval serves. 3 of 53 quotes differ, all one sentence in
+NIM-106. See D28.
+A full sync against an empty source deletes the whole index and reports
+success. Harmless with a local file, real against a live API.
+The high water mark is recomputed each run and can move backwards.
+Incremental fetches the whole corpus to compute that watermark, so it is
+not actually incremental in cost.
+50 questions, 28 with a gold article. The intervals are still wide.
+
+## Open questions
+
+Whether hybrid retrieval pays once the corpus is thousands of articles
+rather than 43 chunks. The theory held, the data was too clean to show it.
+Groundedness on prompt v4, never measured.

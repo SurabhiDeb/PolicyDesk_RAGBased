@@ -162,3 +162,42 @@ different cases. "Scored at least as well" is not "is at least as good".
 Where escalation exists to protect vulnerable customers, Haiku's greater
 willingness to hand off is the behaviour the spec wants. That is a better
 argument for Haiku than cost, and it was invisible in the aggregate.
+
+## D26. The index is maintained, never rebuilt
+18 Sept 2026. sync.py replaces ingest.py. A rebuild drops the table, which
+leaves the index empty while it runs and pays for every embedding a second
+time. Sync upserts on (article_id, section) and deletes in two places,
+sections that no longer exist in a synced article, and on a full sync
+articles that no longer exist in the source. Incremental is the default and
+full is explicit, because only a full sync knows the article list is
+complete enough to delete against.
+
+## D27. Deletion was proved by breaking the source on purpose
+18 Sept 2026. A claim about deletion is worth nothing untested. NIM-101 had
+its last section dropped and its timestamp bumped, NIM-105 was removed
+entirely, and both syncs were run against the damage.
+
+Incremental caught the section and missed the article, 43 chunks to 42. Full
+caught the article, 42 to 39. Restoring the source and running incremental
+again left the index at 39, because restored articles carry their old
+timestamps and never beat the watermark. Only full brought it back to 43.
+
+An incremental sync can neither see a deletion nor heal one. That is the
+failure naive syncs ship with, and it is now demonstrated rather than
+asserted.
+
+## D28. articles.jsonl stays as the measurement corpus for now
+18 Sept 2026. Retrieval serves the index built from zendesk_articles.json,
+but run.py, score.py and test_eval.py still read data/articles.jsonl. So
+corpus_sha fingerprints a file that no longer decides what was retrieved, and
+the C2 verbatim check compares quotes against wording the model was never
+shown.
+
+Measured before deciding. 3 of 53 quotes in the v6 run fail against the
+Zendesk text, and all three are the same sentence in NIM-106, which is one
+prose line in the old corpus and a bulleted list in the new one. One
+article's wording, not a broken corpus.
+
+Switching now turns a passing build red for something that is not a product
+failure. Recorded as a known limitation instead, and left for whoever wires
+up the live API, because that is the point at which the old file has to go.
