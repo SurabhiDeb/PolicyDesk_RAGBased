@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [],\n  \"confidence\": \"high\",\n  \"handoff_reason\": \"The question asks about a historical version of the refund policy, but the help articles provided do not contain information about policy changes or dates.\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 929,
+  "output_tokens": 79,
+  "model_seconds": 1.28
+}

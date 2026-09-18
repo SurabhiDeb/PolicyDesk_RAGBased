@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"If the same payment was taken twice, Nimbus will refund the duplicate in full. You don't need to provide any documentation\u2014simply report it in the app and Nimbus will verify it against the payment record itself. A duplicate is identified as having the same amount, the same merchant, and a timestamp within 60 minutes of the original.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-105\",\n      \"section\": \"Duplicate payments\",\n      \"quote\": \"If the same payment was taken twice, we refund the duplicate in full.\"\n    },\n    {\n      \"article_id\": \"NIM-105\",\n      \"section\": \"What we need from you\",\n      \"quote\": \"Nothing. Report it in the app and we verify it against the payment record ourselves.\"\n    },\n    {\n      \"article_id\": \"NIM-105\",\n      \"section\": \"How to check\",\n      \"quote\": \"A duplicate has the same amount, the same merchant, and a timestamp within 60 minutes of the original.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 854,
+  "output_tokens": 287,
+  "model_seconds": 1.98
+}

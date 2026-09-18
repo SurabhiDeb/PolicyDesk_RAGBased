@@ -25,7 +25,7 @@ PROMPT = HERE / "prompts" / "v4.md"
 MODEL = "anthropic/claude-haiku-4.5"
 MAX_TOKENS = 600
 
-TRACED_HIT_FIELDS = ("article_id", "section", "visibility", "status", "distance")
+TRACED_HIT_FIELDS = ("article_id", "section", "visibility", "status", "distance", "score", "vector_rank", "keyword_rank")
 
 
 def build_context(hits: list[dict]) -> str:
@@ -57,7 +57,7 @@ def answer(
                 hits = search(question, k, audience)
                 span.update(
                     output=[
-                        {f: h[f] for f in TRACED_HIT_FIELDS} for h in hits
+                        {f: h[f] for f in TRACED_HIT_FIELDS if f in h} for h in hits
                     ]
                 )
 

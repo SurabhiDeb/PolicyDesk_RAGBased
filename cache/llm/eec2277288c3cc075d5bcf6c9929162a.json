@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"If your refund has not arrived after 10 business days, you should contact support.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"Refund timescales / Delays\",\n      \"quote\": \"If your refund has not arrived after 10 business days, contact support.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 904,
+  "output_tokens": 128,
+  "model_seconds": 1.15
+}

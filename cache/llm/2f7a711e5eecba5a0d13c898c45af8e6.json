@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"This customer has indicated bereavement, which is a vulnerability indicator. Their refund request should be routed to specialist care rather than handled by you. Do not ask them to repeat their circumstances to another agent\u2014specialist care will have access to what they've already told you. Specialist care has discretion to waive normal refund limits if appropriate for their situation.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-203\",\n      \"section\": \"Identifying vulnerability\",\n      \"quote\": \"Bereavement, serious illness, and severe financial hardship are vulnerability indicators. Refund requests from these customers route to specialist care.\"\n    },\n    {\n      \"article_id\": \"NIM-203\",\n      \"section\": \"Never\",\n      \"quote\": \"Do not ask a vulnerable customer to repeat their circumstances to a second agent.\"\n    },\n    {\n      \"article_id\": \"NIM-203\",\n      \"section\": \"Discretion\",\n      \"quote\": \"Normal refund limits may be waived at specialist care's discretion.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 881,
+  "output_tokens": 288,
+  "model_seconds": 2.14
+}

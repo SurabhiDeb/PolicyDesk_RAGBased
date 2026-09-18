@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"If you used the service during the first 14 days, Nimbus refunds the unused portion, calculated daily. Once approved, the refund reaches your Nimbus account within 3 to 5 business days.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-104\",\n      \"section\": \"Partial use\",\n      \"quote\": \"If you have used the service during the 14 days, we refund the unused portion, calculated daily.\"\n    },\n    {\n      \"article_id\": \"NIM-113\",\n      \"section\": \"How long a refund takes\",\n      \"quote\": \"Once approved, a refund reaches your Nimbus account within 3 to 5 business days.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 895,
+  "output_tokens": 218,
+  "model_seconds": 1.43
+}

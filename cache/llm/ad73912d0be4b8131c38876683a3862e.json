@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"no_answer\",\n  \"answer\": null,\n  \"citations\": [],\n  \"confidence\": \"high\",\n  \"handoff_reason\": \"The articles contradict each other on this question: NIM-108 states Nimbus can raise the refund on your behalf for app store subscriptions, while NIM-109 states Nimbus cannot issue a refund for subscriptions billed by third parties including Google Play.\"\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 937,
+  "output_tokens": 111,
+  "model_seconds": 1.32
+}

@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"A duplicate has the same amount, the same merchant, and a timestamp within 60 minutes of the original.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-105\",\n      \"section\": \"How to check\",\n      \"quote\": \"A duplicate has the same amount, the same merchant, and a timestamp within 60 minutes of the original.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 857,
+  "output_tokens": 132,
+  "model_seconds": 1.15
+}

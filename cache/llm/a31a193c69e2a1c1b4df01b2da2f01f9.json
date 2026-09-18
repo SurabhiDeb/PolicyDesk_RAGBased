@@ -1,0 +1,8 @@
+{
+  "text": "```json\n{\n  \"status\": \"answered\",\n  \"answer\": \"If a merchant will not refund you and you paid by card, you may be able to raise a chargeback under the card scheme rules. A chargeback is a formal dispute with the merchant's bank, handled by our disputes team. It is not a Nimbus refund.\",\n  \"citations\": [\n    {\n      \"article_id\": \"NIM-120\",\n      \"section\": \"When to raise a dispute\",\n      \"quote\": \"If a merchant will not refund you and you paid by card, you may be able to raise a chargeback under the card scheme rules.\"\n    },\n    {\n      \"article_id\": \"NIM-120\",\n      \"section\": \"This is not a refund\",\n      \"quote\": \"A chargeback is a formal dispute with the merchant's bank, handled by our disputes team. It is not a Nimbus refund.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"handoff_reason\": null\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "finish_reason": "stop",
+  "input_tokens": 922,
+  "output_tokens": 246,
+  "model_seconds": 1.72
+}
