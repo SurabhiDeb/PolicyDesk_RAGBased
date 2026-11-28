@@ -2,11 +2,11 @@ Chatbot Lab
 
 Two customer-support chatbots, each built end to end with its own spec, evaluation set and CI gate.
 
-#	Product	What it does	Status
+#	Product:	What it does	Status
 1	Triage	Routes an inbound support message to a team, assigns urgency, decides whether to escalate	Shipped, 2 targets unmet
 2	PolicyDesk	Answers refund policy questions from help-centre articles, with citations and human handoff	Shipped, 1 target unmet
 
-Requires Python 3 and a .env holding AICREDITS_API_KEY, AICREDITS_BASE_URL and OPENAI_API_KEY (the same key, under the name promptfoo expects). Never committed.
+Requires Python 3 and a .env holding OPENAI_API_KEY (the same key, under the name promptfoo expects). Never committed.
 
 Quickstart
 bash
@@ -66,6 +66,7 @@ Case 2, declined card, team boundary never decided in the spec.
 Latency fails the budget on every call. Not investigated.
 Output contract is missing secondary_intent and confidence. Case 6's second intent is silently dropped.
 No held-out set. Every case informed development.
+
 2. PolicyDesk
 
 Answers refund policy questions from help-centre articles, cites the sentence it relied on, and hands off to a human when the corpus does not cover the question. Serves an internal agent and a customer from one retrieval core, with admissibility rules (visibility, status, supersession) applied as predicates in SQL rather than as prompt instructions. The audience is derived from the API key, never from the request body.
