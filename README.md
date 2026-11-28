@@ -35,7 +35,7 @@ products/<name>/
   data/               labelled cases
   prompts/            versioned, never edited in place
   runs/               every run, with full provenance
-  runs/*-notes.md     error analysis and failure taxonomy
+  runs/*-notes.md     error analysis, failure taxonomy, condition mapping
   gate.py             CI pass/fail
 
 promptfoo/            matrix comparison config
@@ -71,6 +71,8 @@ No held-out set. Every case informed development.
 Answers refund policy questions from help-centre articles, cites the sentence it relied on, and hands off to a human when the corpus does not cover the question. Serves an internal agent and a customer from one retrieval core, with admissibility rules (visibility, status, supersession) applied as predicates in SQL rather than as prompt instructions. The audience is derived from the API key, never from the request body.
 
 Prompt v4, retriever filtered-v1, Haiku 4.5, 50 questions, 28 with a gold article. Run runs/20260917-153710Z-v4.json.
+
+This configuration is condition C3 in the dossier study's numbering. The mapping from C0 to C5 onto run files, derived from each run's prompt sha, retriever and model id, is in products/policydesk/runs/conditions-notes.md. Note that C1 to C5 in SPEC.md are critical failure classes, not conditions.
 
 Metric	Result	Target
 recall@5	100%	none set

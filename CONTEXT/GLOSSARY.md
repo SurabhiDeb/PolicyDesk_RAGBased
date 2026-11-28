@@ -41,3 +41,19 @@ documents before answering, instead of guessing from memory.
 Workflow in CI. A file that tells the robot what to do. It lives in a folder called .github/workflows.
 
 Runner. The temporary cloud computer that does the work.
+
+**C-numbers, two unrelated meanings.** The repo uses `C` followed by a digit
+for two different things, and they do not line up.
+
+In `SPEC.md`, C1 to C5 are *critical failure classes*. C1 is internal content
+reaching a customer, C3 is an answer drawn from an archived or superseded
+article, C5 is output that breaks the contract. Result rows carry these as a
+field, `"critical": "C3"`.
+
+In the dossier study, C0 to C5 are *experimental conditions*, one per run
+file. C3 there is the shipped configuration, prompt v4 with the filtered
+retriever on Haiku 4.5.
+
+So "C3" means an archived-article failure or the shipped config depending on
+which document you are in. The condition mapping is in
+`products/policydesk/runs/conditions-notes.md`.
